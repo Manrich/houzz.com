@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20150102 at Wed Jan 21 11:26:48 2015
+ By uniteet7
+</metadata>
+<defs>
+<font id="icomoonbold" horiz-adv-x="0" >
+  <font-face 
+    font-family="icomoonbold"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 8 3 0 0 0 0 0 0"
+    ascent="480"
+    descent="-32"
+    bbox="0 -32 512 480"
+    underline-thickness="0"
+    underline-position="0"
+    unicode-range="U+0031-F000"
+  />
+<missing-glyph horiz-adv-x="512" 
+ />
+    <glyph glyph-name=".notdef" horiz-adv-x="512" 
+ />
+    <glyph glyph-name=".notdef" horiz-adv-x="512" 
+ />
+    <glyph glyph-name=".null" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="170" 
+ />
+    <glyph glyph-name="one" unicode="1" horiz-adv-x="415" 
+d="M204 477l-146 -84v-169l146 84v169zM58 224v-168l146 84zM204 140v-168l146 84v168zM204 308l146 -84v169zM204 160l113 65l-113 65v-130z" />
+    <glyph glyph-name="two" unicode="2" horiz-adv-x="281" 
+d="M81 -30l-81 63l150 191l-150 192l81 63l199 -255z" />
+    <glyph glyph-name="uniF000" unicode="&#xf000;" 
+d="M0 480l512 -512h-512v512z" />
+  </font>
+</defs></svg>
