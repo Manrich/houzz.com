@@ -1,8 +1,0 @@
-window.hzmr = window.hzmr || [];
-/************* Start home.js for locale en-US **************/
-try {HZ.ns("HZ.home"),HZ.home.Page=new function(){if(this.followSuggestedUser=function(a,b,c){var a=$(a),d=a.hasClass("following")?"u":"f";HZ.actions.Follow.updateFollow(d,b,null,function(b){b&&"true"==b.success&&(a.hasClass("following")?(a.text("Follow"),a.removeClass("following")):(a.addClass("following"),a.text("Following"))),"function"==typeof c&&c(b)})},this.dismissIntlBanner=function(a){setCookie(a,!0),$("#"+a).addClass("hidden")},!UIHelper.isMobileDevice&&$("#homepage-footer").length&&$(".homepage-content-narrow").length){var a=(navigator.userAgent,$(".homepage-content-narrow")),b=$("#homepage-footer"),c=$("#navHeader").height()+25,d=!1,e=b.offset().top-c,f=$.debounce(50,function(){b.css("left",a.offset().left-$(window).scrollLeft())}),g=function(){var g=$(window).scrollTop();g>=e&&!d?(d=!0,b.css("position","fixed"),b.css("top",c+"px"),$(window).on("resize",f),f()):e>g&&d&&(d=!1,b.css("position","static"),b.css("top","auto"),b.css("left","auto"),$(window).off("resize",f)),d&&b.css("left",a.offset().left-$(window).scrollLeft())};$(window).load(function(){e=b.offset().top-c,$(window).on("scroll",g)})}if(!UIHelper.isMobileDevice){var h=!1,i=$("#homepage-bottom-footer");if(i){var j=function(){var a=$(window).scrollTop();!h&&a>0?(h=!0,i.removeClass("hide")):h&&0>=a&&(h=!1,i.addClass("hide"))};$(document).ready(function(){$(window).on("scroll",j)})}}};
-
-window.hzmr.push("home:2086");
-} catch (err) {HZ.utils.Logger.sendJsExceptionStackTrace(err)}
-
-/*************  End home.js  **************/
