@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>Вход</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/modernizr-2.8.3.min.js"></script>
+	
+</head>
+<body>
+<div class="enter-top">
+	<div class="wrapper clearfix">
+		<div class="logo">
+      		<a href="#">
+      			<img src="images/logo.png" alt="" />
+      		</a>
+      	</div>
+	</div>
+</div>
+<div class="wrapper register">
+	<h2>Вход</h2>
+	<div class="enter-block clearfix">
+		<div class="input-block">
+			<p>Введите Email</p>
+			<input type="text" placeholder="Пример:primer@idealizers.com.ua">
+		</div>
+		<div class="input-block">
+			<p>Введите пароль</p>
+			<input type="password" placeholder="Пример:primer">
+		</div>
+		<div class="input-block">
+			<input type="checkbox" id="remembe">
+			<label for="remembe">Запомнить меня</label>
+		</div>
+		<div class="input-block">
+			<input type="submit" value="Вход">
+		</div>
+		<div class="input-block clearfix">
+			<a href="#" class="more-info">
+				<span>Забыли пароль?</span>
+				<span class="more-arr"></span>
+			</a>
+		</div>
+
+		<span class="else">или</span>	
+	</div>
+	<div class="social-enter">
+		<a href="#" class="social-link enter-fac">Вход с Facebook</a>
+		<a href="#" class="social-link enter-vk">Вход с Vkontakte</a>
+		<div class="input-block clearfix">
+			<a href="#" class="more-info">
+				<span>Регистрация</span>
+				<span class="more-arr"></span>
+			</a>
+		</div>
+		<p>Нажав войти в систему с Facebook, с Vkontakte <br>
+		я признаю и согласен с Правилами <br>
+		Использования и Политика конфиденциальности .</p>
+	</div>
+</div>
+
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+ <script>
+ 	$(document).ready(function () {
+		$('input,textarea').focus(function(){
+		  $(this).data('placeholder',$(this).attr('placeholder'))
+		  $(this).attr('placeholder','');
+		});
+		$('input,textarea').blur(function(){
+		  $(this).attr('placeholder',$(this).data('placeholder'));
+		});
+	});
+ </script>
+</body>
+</html>
