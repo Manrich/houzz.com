@@ -33,7 +33,7 @@
 	<title>Design Ideas, Pictures, Remodel and Decor</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script src="js/jquery.fancybox-1.3.4.js"></script>
-
+	
 			
 <style type="text/css">.reloadMe.rimg img.reloadable { width: 100%; height: auto; }</style></head>
 <body class="en-US hbs new-std-header secondary-rooms-header">
@@ -125,7 +125,8 @@
 		</div>
 
 		
-		<div id="mainArea"><div id="mainContent" class="tallHeader">
+		<div id="mainArea">
+		<div id="mainContent" class="tallHeader">
 		<div class="container">
 	<div class="leftSideBar">
 	<form id="leftFilters" method="get" action="http://www.houzz.com/professionals#" onsubmit="return handleFiltersChanged(&#39;http://www.houzz.com/professionals&#39;)">
@@ -135,7 +136,8 @@
 				</div>
 		
 		</div><div class="sidebar collapsible" scopeid="filterProProducts"><div class="sidebar-header" compid="filterHeader">Products for the Home&nbsp;<span class="down-icon toggle"></span>					
-				</div><div class="sidebar-body">		<ul id="">
+				</div><div class="sidebar-body">		
+				<ul id="list-child">
 		<li class="sidebar-item" compid="opt" posid="0">			<a class="sidebar-item-label" href="http://www.houzz.com/professionals/appliances">Appliances</a>
 					</li><li class="sidebar-item" compid="opt" posid="1">			<a class="sidebar-item-label" href="http://www.houzz.com/professionals/bedding-and-bath">Bedding &amp; Bath</a>
 					</li><li class="sidebar-item" compid="opt" posid="2">			<a class="sidebar-item-label" href="http://www.houzz.com/professionals/carpet-and-flooring">Carpet &amp; Flooring</a>
@@ -144,20 +146,87 @@
 					</li><li class="sidebar-item" compid="opt" posid="5">			<a class="sidebar-item-label" href="http://www.houzz.com/professionals/lighting">Lighting</a>
 					</li><li class="sidebar-item" compid="opt" posid="6">			<a class="sidebar-item-label" href="http://www.houzz.com/professionals/upholstery">Upholstery</a>
 					</li><li class="sidebar-item" compid="opt" posid="7">			<a class="sidebar-item-label" href="http://www.houzz.com/professionals/window-coverings">Window Treatments</a>
-					</li>		</ul>
+					</li>		
+				</ul>
 		</div>
 		</div><div class="sidebar collapsible state-collapsed" scopeid="filterProRemodeling"><div class="sidebar-header" compid="filterHeader">Стили&nbsp;<span class="toggle more-icon"></span>					
 				</div>
-		</div><div class="sidebar collapsible state-collapsed" scopeid="filterProOutside"><div class="sidebar-header" compid="filterHeader">По типу&nbsp;<span class="toggle more-icon"></span>					
-				</div>
-		</div><div class="sidebar collapsible state-collapsed" scopeid="filterProWindows"><div class="sidebar-header" compid="filterHeader">Профильные услуги&nbsp;<span class="toggle more-icon"></span>					
-				</div>
+		</div><div class="sidebar collapsible" scopeid="filterProWindows">
+		<div class="sidebar-header" compid="filterHeader">Цвета&nbsp;<span class="toggle down-icon"></span>					
+			</div>
+			<div class="sidebar-body">
+				<ul class="list-colors clearfix">
+					<li><span class="color-var" style="background-color:#660000">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#cc0000">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#ea4c88">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#993399">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#663399">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#66cccc">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#77cc33">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#336600">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#cccc33">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#ffcc33">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#996633">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#663300">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#c8ad7f">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#999999">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#999999">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#ffffff;outline:1px solid #d4d4d4;">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#fff533">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#304961">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#0066cc">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#ff6600">
+						<span class="col-del"></span>
+					</span></li>
+					<li><span class="color-var" style="background-color:#000">
+						<span class="col-del"></span>
+					</span></li>
+				</ul>
+			</div>
 		</div>
 		</form>
 </div>
 	<div class="rightSideContent browsePhotos trackMe" scopeid="browse">
-				<div class="first-row mbxl">
-		<div class="headerContainer"><h1 class="large-header">5,282,652    Home Design Photos</h1><div class="pageDescriptionPeekable" style="max-height: none;"><div class="pageDescription ">			<div class="bold-text">Popular in Spaces</div><br>
+				<div class="first-row mbxl clearfix">
+		<div class="headerContainer clearfix"><h1 class="large-header">5,282,652    Home Design Photos</h1><div class="pageDescriptionPeekable" style="max-height: none;"><div class="pageDescription ">			<div class="bold-text">Popular in Spaces</div><br>
 			<div class="popularSearches">
 								<a class="popSearchItem" href="http://www.houzz.com/fireplace">fireplace</a>
 										<a class="popSearchItem" href="http://www.houzz.com/mudroom">mudroom</a>
@@ -190,14 +259,19 @@
 										<a class="popSearchItem" href="http://www.houzz.com/patio">patio</a>
 										<a class="popSearchItem" href="http://www.houzz.com/rustic">rustic</a>
 										<a class="popSearchItem" href="http://www.houzz.com/foyer">foyer</a>
-					</div></div></div><span class="filter-placeholder"></span><div class="inline-filters"><div class="filter-option"><div class=" collapsible"><div class="sidebar-body">        <span class="dropdown-wrapper-2">
-            <span class="label">Popular Today</span>
-            <span class="icon"></span>
-            <select id="sortByFilter" onchange="window.location.href=this.options[this.selectedIndex].value">
-                <option value="http://www.houzz.com/photos/popular-today" selected="">Popular Today</option><option value="http://www.houzz.com/photos/live-stream">Latest Activity</option><option value="http://www.houzz.com/photos/popular">All Time Popular</option><option value="http://www.houzz.com/photos/featured-new">Newly Featured</option>            </select>
-        </span>
+					</div></div></div><span class="filter-placeholder"></span><div class="inline-filters"><div class="filter-option"><div class=" collapsible"><div class="sidebar-body">
+					<div class="select">
+					<a href="javascript:void(0);" class="slct">Сортировка</a>
+					<ul class="drop">
+						<li><a >Города:по убыванию</a></li>
+						<li><a >Города:по возрастанию</a></li>
+					</ul>
+					<input type="hidden" id="select" />
+				</div>        
         </div>
 		</div></div><div class="filter-option"><div class="sizes-buttons trackMe" scopeid="browseSizes" objid="browseSizesButtons"><a compid="size2" class="sprite-sizes size-s" href="http://www.houzz.com/photos/ls=2"></a><a compid="size4" class="sprite-sizes size-l" href="http://www.houzz.com/photos/ls=4"></a><a compid="size1" class="sprite-sizes size-xl active" href="./Design Ideas, Pictures, Remodel and Decor_files/Design Ideas, Pictures, Remodel and Decor.html"></a></div></div></div></div></div><div class="browseListBody clearfix " id="browseSpacesContext" lb-context="browseDescriptor_:707::::11::">
+
+
 				<div class="ic whiteCard xl portrait" objid="58418" lb-sid="58418" posid="0_0">
 		<div class="photo black" oncontextmenu="PhotoContextMenu.show(event,&quot;58418&quot;);return false;">
 			<div class="imageArea" compid="img">
@@ -206,43 +280,51 @@
 						<img class="hide-context space reloadable" src="images/midcentury-family-room.jpg" sid="58418" width="550" height="440">
 					
 									</a>
-			</div><div id="signup_overlay" class="promote" data-type="hover" style="top: 129px;"><span class="likeIt icon-wrap">Save Photo <span class="more-icon"></span></span><br></div>
-            <div class="hoverButtons"><a class="hzBtn button-baseIcon graybutton hoverButtonPromote saveButton hz-tall-button " href="javascript:;" title="Save to ideabook" compid="addToIdeabook" data-type="ideabook"><span class="button-icon hzi-font hzi-Add-Photo-Button"></span><span class="label button-label">Save</span></a><a class="hzBtn button-baseIcon graybutton emailButton hz-tall-button " href="javascript:;" title="Email this photo" compid="sendEmail" data-type="email"><span class="button-icon hzi-font hzi-Email"></span><span class="label button-label">Email</span></a></div>		</div>		<div class="photoMeta">
-			<div class="uploader"><span class="userThumb" compid="uthumb"><img class="hzHouzzer hz-user-image" src="images/jweissdesign.jpg" data-type="profile" data-id="jweissdesign"></span><div class="userNameBox"><span class="one-line"><span class="hz-username hzHouzzer hzHCUserName" compid="uname" data-type="profile" data-id="jweissdesign">Jennifer Weiss Architecture</span></span></div></div>		<div class="photoInfo" style="height: 320px;"><a class="photo-title one-line" href="http://www.houzz.com/photos/58418/Moraga-Residence-midcentury-family-room-other-metro" title="Moraga Residence" compid="title">Moraga Residence</a><div class="photoCounters">
-			<div class="photo-counter ideabook-counter">
-				<span class="counter-label">Ideabooks</span><span class="counter" compid="buzz">86,416</span>			</div>
-			<div class="photo-counter question-counter">
-				<span class="counter-label">Questions</span><span class="counter" compid="questions">18</span>			</div>
-		</div><div class="photoDescription"></div></div><div class="photoDetails bottom"><div class="stats"><span>“Fireplace tiles” — <span class="hz-username hzHouzzer hzHCUserName " data-type="profile" data-id="waylett_photography">Waylett Photography</span> </span><br></div>		<div class="shareBtns">
-			<div class="social-button-row">
-				<a class="f icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(1,58418);return false;" title="Share a link on Facebook"></a>
-				<span class="hz-pipe"></span>
-				<a class="t icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(2,58418);return false;" title="Share a link on Twitter"></a>
-				<span class="hz-pipe"></span>
-				<a class="g icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(0,58418);return false;" title="Share a link on Googlei+"></a>
-				<span class="hz-pipe"></span>
-				<a class="l icon" title="Link to the photo" href="http://www.houzz.com/photos/58418/Moraga-Residence-midcentury-family-room-other-metro"></a>
 			</div>
-			<div class="action-button-row">
-								<a class="embed-combo-btn" title="Embed this photo on blog" href="javascript:;" onclick="javascript:showEmbedDialog(58418);return false;"><span class="embed icon"></span><span class="textIcon">Embed</span></a>
-				<span class="hz-pipe"></span>
-				<a class="email-combo-btn" title="Email this photo" href="javascript:;" onclick="javascript:HZ.modules.BrowsePhotos.showSendSpaceEmailDialog(58418);return false;"><span class="email icon"></span><span class="email textIcon">Email</span></a>
-								<span class="hz-pipe"></span>
-				<a class="ask-combo-btn" title="Ask a question" href="javascript:;" onclick="HZ.auth.Manager.signup(44);return false;"><span class="ask icon"></span><span class="textIcon">Question</span></a>
-							</div>
+			<div class="idea">
+				<a href="#">
+					<div class="idea-block">
+						<span>Идея</span>
+					</div>
+				</a>
+			</div>
+			<div class="large-heart-block">
+				<a href="#" class="blog-sprite large-heart-icon"></a>
+			</div>
+            	</div>		<div class="photoMeta">
+			<div class="uploader"><span class="userThumb" compid="uthumb"><img class="hzHouzzer hz-user-image" src="images/jweissdesign.jpg" data-type="profile" data-id="jweissdesign"></span><div class="userNameBox"><span class="one-line"><span class="hz-username hzHouzzer hzHCUserName" compid="uname" data-type="profile" data-id="jweissdesign">Jennifer Weiss Architecture</span></span></div></div>		<div class="photoInfo" style="height: 320px;">
+			<span itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating"><div class="pro-rating"><a class="review-star-link colorLink" compid="review" href="http://www.houzz.com/browseReviews/loridennis/lori-dennis-asid-leed-ap"><div class="classification"><div class="cover"></div><div ratingvalue="(50/10)" class="progress" style="width:100%;"></div></div><span class="pro-review-string"><span itemprop="reviewCount">&nbsp;97</span> Отзывов</span></a><meta itemprop="ratingValue" content="5"></div></span>
+
+
+			<div class="pro-description">Lori Dennis, ASID, LEED AP is an internationally known celebrity Interior Designer, speaker, best- selling author and star of HGTV’s The Real Designing Women.
+			Partnered with... 
+			<div class="clearfix"></div>
+			<a class="colorLink small-text icon-wrap more-info" compid="more" href="http://www.houzz.com/pro/loridennis/lori-dennis-asid-leed-ap">Подробнее <span class="more-icon"></span></a>
+
+			</div>
+			
 		</div>
-		</div>		</div>
+		<div class="photoDetails bottom">
+			<div class="blog-link">
+							
+							<div class="heart-block">
+								<a href="#" class="blog-icon icon-2">
+									<span class="blog-sprite heart-icon"></span>
+								</a> <br />
+								<a href="#">97 Нравится</a>
+							</div>
+							<div class="comment-block">
+								<a href="#" class="blog-icon icon-3">
+									<span class="blog-sprite comment-icon"></span>
+								</a> <br />
+								<a href="#">97 Коментарии</a>
+							</div>
+						</div>
+		</div>		
+		</div>
 	</div>
 	 
-				<div class="leaderboardBanner">
-				<div class="whiteCard xl">
-				<div id="leaderboardAdDiv">
-					<a target="_blank" rel="nofollow" href="http://www.houzz.com/photos/ls=1#" id="_h_url_leaderboardBanner1" onclick="_h_url_click_leaderboardBanner(this);">
-						<img width="780" height="90" src="images/banner7_app2.png">
-					</a>
-				</div>
-								</div>
-				</div>
+				
 			<div class="ic whiteCard xl portrait" objid="22512822" lb-sid="22512822" posid="1_0">
 		<div class="photo black" oncontextmenu="PhotoContextMenu.show(event,&quot;22512822&quot;);return false;">
 			<div class="imageArea" compid="img">
@@ -252,188 +334,85 @@
 					
 									</a>
 			</div>
-            <div class="hoverButtons"><a class="hzBtn button-baseIcon graybutton hoverButtonPromote saveButton hz-tall-button " href="javascript:;" title="Save to ideabook" compid="addToIdeabook" data-type="ideabook"><span class="button-icon hzi-font hzi-Add-Photo-Button"></span><span class="label button-label">Save</span></a><a class="hzBtn button-baseIcon graybutton emailButton hz-tall-button " href="javascript:;" title="Email this photo" compid="sendEmail" data-type="email"><span class="button-icon hzi-font hzi-Email"></span><span class="label button-label">Email</span></a></div>		</div>		<div class="photoMeta">
-			<div class="uploader"><span class="userThumb" compid="uthumb"><img class="hzHouzzer hz-user-image" src="images/bethwebb.jpg" data-type="profile" data-id="bethwebb"></span><div class="userNameBox"><span class="one-line"><span class="hz-username hzHouzzer hzHCUserName" compid="uname" data-type="profile" data-id="bethwebb">Beth Webb Interiors</span></span><div class="pro-rating"><div class="classification"><div class="cover"></div><div class="progress" style="width:100%;"></div></div><span class="pro-review-string"><span>1</span> Review</span></div></div></div>		<div class="photoInfo" style="height: 606px;"><a class="photo-title one-line" href="http://www.houzz.com/photos/22512822/Lake-Chatuge-transitional-living-room-atlanta" title="Lake Chatuge" compid="title">Lake Chatuge</a><div class="photoCounters">
-			<div class="photo-counter ideabook-counter">
-				<span class="counter-label">Ideabooks</span><span class="counter" compid="buzz">234</span>			</div>
-			<div class="photo-counter question-counter">
-				<span class="counter-label">Questions</span><span class="counter" compid="questions">0</span>			</div>
-		</div><div class="photoDescription">Emily Followill</div></div><div class="photoDetails bottom"><div class="stats"><span>“color” — <span class="hz-username hzHouzzer hzHCUserName " data-type="profile" data-id="muhammad_naeem21">Muhammad Naeem</span> </span><br></div>		<div class="shareBtns">
-			<div class="social-button-row">
-				<a class="f icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(1,22512822);return false;" title="Share a link on Facebook"></a>
-				<span class="hz-pipe"></span>
-				<a class="t icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(2,22512822);return false;" title="Share a link on Twitter"></a>
-				<span class="hz-pipe"></span>
-				<a class="g icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(0,22512822);return false;" title="Share a link on Googlei+"></a>
-				<span class="hz-pipe"></span>
-				<a class="l icon" title="Link to the photo" href="http://www.houzz.com/photos/22512822/Lake-Chatuge-transitional-living-room-atlanta"></a>
-			</div>
-			<div class="action-button-row">
-								<a class="embed-combo-btn" title="Embed this photo on blog" href="javascript:;" onclick="javascript:showEmbedDialog(22512822);return false;"><span class="embed icon"></span><span class="textIcon">Embed</span></a>
-				<span class="hz-pipe"></span>
-				<a class="email-combo-btn" title="Email this photo" href="javascript:;" onclick="javascript:HZ.modules.BrowsePhotos.showSendSpaceEmailDialog(22512822);return false;"><span class="email icon"></span><span class="email textIcon">Email</span></a>
-								<span class="hz-pipe"></span>
-				<a class="ask-combo-btn" title="Ask a question" href="javascript:;" onclick="HZ.auth.Manager.signup(44);return false;"><span class="ask icon"></span><span class="textIcon">Question</span></a>
-							</div>
-		</div>
-		</div>		</div>
-	</div>
-	<div class="ic whiteCard xl portrait" objid="2721306" lb-sid="2721306" posid="2_0">
-		<div class="photo black" oncontextmenu="PhotoContextMenu.show(event,&quot;2721306&quot;);return false;">
-			<div class="imageArea" compid="img">
-				<a class="noHoverLink gallery" href="images/traditional-closet.jpg" lb-view="" lb-mag="">
-					
-						<img  class="hide-context space reloadable" src="images/traditional-closet.jpg" sid="2721306" width="550" height="734">
-					
-									</a>
-			</div>
-            <div class="hoverButtons"><a class="hzBtn button-baseIcon graybutton hoverButtonPromote saveButton hz-tall-button " href="javascript:;" title="Save to ideabook" compid="addToIdeabook" data-type="ideabook"><span class="button-icon hzi-font hzi-Add-Photo-Button"></span><span class="label button-label">Save</span></a><a class="hzBtn button-baseIcon graybutton emailButton hz-tall-button " href="javascript:;" title="Email this photo" compid="sendEmail" data-type="email"><span class="button-icon hzi-font hzi-Email"></span><span class="label button-label">Email</span></a></div>		</div>		<div class="photoMeta">
-			<div class="uploader"><span class="userThumb" compid="uthumb"><img class="hzHouzzer hz-user-image" src="images/sforganized_interiors.jpg" data-type="profile" data-id="sforganized_interiors"></span><div class="userNameBox"><span class="one-line"><span class="hz-username hzHouzzer hzHCUserName" compid="uname" data-type="profile" data-id="sforganized_interiors">San Francisco Organized Interiors</span></span></div></div>		<div class="photoInfo" style="height: 614px;"><a class="photo-title one-line" href="http://www.houzz.com/photos/2721306/Laundry-and-Bath-traditional-closet-san-francisco" title="Laundry and Bath" compid="title">Laundry and Bath</a><div class="photoCounters">
-			<div class="photo-counter ideabook-counter">
-				<span class="counter-label">Ideabooks</span><span class="counter" compid="buzz">13,880</span>			</div>
-			<div class="photo-counter question-counter">
-				<span class="counter-label">Questions</span><span class="counter" compid="questions">3</span>			</div>
-		</div><div class="photoDescription"></div></div><div class="photoDetails bottom"><div class="stats"><span>“baskets at bottom” — <span class="hz-username hzHouzzer hzHCUserName " data-type="profile" data-id="cristti62">cristti62</span> </span><br></div>		<div class="shareBtns">
-			<div class="social-button-row">
-				<a class="f icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(1,2721306);return false;" title="Share a link on Facebook"></a>
-				<span class="hz-pipe"></span>
-				<a class="t icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(2,2721306);return false;" title="Share a link on Twitter"></a>
-				<span class="hz-pipe"></span>
-				<a class="g icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(0,2721306);return false;" title="Share a link on Googlei+"></a>
-				<span class="hz-pipe"></span>
-				<a class="l icon" title="Link to the photo" href="http://www.houzz.com/photos/2721306/Laundry-and-Bath-traditional-closet-san-francisco"></a>
-			</div>
-			<div class="action-button-row">
-								<a class="embed-combo-btn" title="Embed this photo on blog" href="javascript:;" onclick="javascript:showEmbedDialog(2721306);return false;"><span class="embed icon"></span><span class="textIcon">Embed</span></a>
-				<span class="hz-pipe"></span>
-				<a class="email-combo-btn" title="Email this photo" href="javascript:;" onclick="javascript:HZ.modules.BrowsePhotos.showSendSpaceEmailDialog(2721306);return false;"><span class="email icon"></span><span class="email textIcon">Email</span></a>
-								<span class="hz-pipe"></span>
-				<a class="ask-combo-btn" title="Ask a question" href="javascript:;" onclick="HZ.auth.Manager.signup(44);return false;"><span class="ask icon"></span><span class="textIcon">Question</span></a>
-							</div>
-		</div>
-		</div>		</div>
-	</div>
-	<div class="ic whiteCard xl portrait" objid="22505969" lb-sid="22505969" posid="3_0">
-		<div class="photo black" oncontextmenu="PhotoContextMenu.show(event,&quot;22505969&quot;);return false;">
-			<div class="imageArea" compid="img">
-				<a class="noHoverLink gallery" href="images/traditional-bathroom.jpg" lb-view="" lb-mag="">
-					
-						<img  class="hide-context space reloadable" src="images/traditional-bathroom.jpg" sid="22505969" width="550" height="734">
-					
-									</a>
-			</div>
-            <div class="hoverButtons"><a class="hzBtn button-baseIcon graybutton hoverButtonPromote saveButton hz-tall-button " href="javascript:;" title="Save to ideabook" compid="addToIdeabook" data-type="ideabook"><span class="button-icon hzi-font hzi-Add-Photo-Button"></span><span class="label button-label">Save</span></a><a class="hzBtn button-baseIcon graybutton emailButton hz-tall-button " href="javascript:;" title="Email this photo" compid="sendEmail" data-type="email"><span class="button-icon hzi-font hzi-Email"></span><span class="label button-label">Email</span></a></div>		</div>		<div class="photoMeta">
-			<div class="uploader"><span class="userThumb" compid="uthumb"><img class="hzHouzzer hz-user-image" src="images/davittdesignbuild.jpg" data-type="profile" data-id="davittdesignbuild"></span><div class="userNameBox"><span class="one-line"><span class="hz-username hzHouzzer hzHCUserName" compid="uname" data-type="profile" data-id="davittdesignbuild">Davitt Design Build, Inc.</span></span></div></div>		<div class="photoInfo" style="height: 614px;"><a class="photo-title one-line" href="http://www.houzz.com/photos/22505969/Historic-Renovation-Idlewild-traditional-bathroom-providence" title="Historic Renovation, &quot;Idlewild&quot;" compid="title">Historic Renovation, "Idlewild"</a><div class="photoCounters">
-			<div class="photo-counter ideabook-counter">
-				<span class="counter-label">Ideabooks</span><span class="counter" compid="buzz">95</span>			</div>
-			<div class="photo-counter question-counter">
-				<span class="counter-label">Questions</span><span class="counter" compid="questions">0</span>			</div>
-		</div><div class="photoDescription">Nat Rea</div></div><div class="photoDetails bottom"><div class="stats"><span>“Like window trim” — <span class="hz-username hzHouzzer hzHCUserName " data-type="profile" data-id="danette_rasmussen">Danette Rasmussen</span> </span><br></div>		<div class="shareBtns">
-			<div class="social-button-row">
-				<a class="f icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(1,22505969);return false;" title="Share a link on Facebook"></a>
-				<span class="hz-pipe"></span>
-				<a class="t icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(2,22505969);return false;" title="Share a link on Twitter"></a>
-				<span class="hz-pipe"></span>
-				<a class="g icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(0,22505969);return false;" title="Share a link on Googlei+"></a>
-				<span class="hz-pipe"></span>
-				<a class="l icon" title="Link to the photo" href="http://www.houzz.com/photos/22505969/Historic-Renovation-Idlewild-traditional-bathroom-providence"></a>
-			</div>
-			<div class="action-button-row">
-								<a class="embed-combo-btn" title="Embed this photo on blog" href="javascript:;" onclick="javascript:showEmbedDialog(22505969);return false;"><span class="embed icon"></span><span class="textIcon">Embed</span></a>
-				<span class="hz-pipe"></span>
-				<a class="email-combo-btn" title="Email this photo" href="javascript:;" onclick="javascript:HZ.modules.BrowsePhotos.showSendSpaceEmailDialog(22505969);return false;"><span class="email icon"></span><span class="email textIcon">Email</span></a>
-								<span class="hz-pipe"></span>
-				<a class="ask-combo-btn" title="Ask a question" href="javascript:;" onclick="HZ.auth.Manager.signup(44);return false;"><span class="ask icon"></span><span class="textIcon">Question</span></a>
-							</div>
-		</div>
-		</div>		</div>
-	</div>
-	<div class="ic whiteCard xl portrait" objid="1076491" lb-sid="1076491" posid="4_0">
-		<div class="photo black" oncontextmenu="PhotoContextMenu.show(event,&quot;1076491&quot;);return false;">
-			<div class="imageArea" compid="img">
-				<a class="noHoverLink gallery" href="images/traditional-kitchen.jpg" lb-view="" lb-mag="">
-					
-						<img  class="hide-context space reloadable" src="images/traditional-kitchen.jpg" sid="1076491" width="550" height="734">
-					
-									</a>
-			</div>
-            <div class="hoverButtons"><a class="hzBtn button-baseIcon graybutton hoverButtonPromote saveButton hz-tall-button " href="javascript:;" title="Save to ideabook" compid="addToIdeabook" data-type="ideabook"><span class="button-icon hzi-font hzi-Add-Photo-Button"></span><span class="label button-label">Save</span></a><a class="hzBtn button-baseIcon graybutton emailButton hz-tall-button " href="javascript:;" title="Email this photo" compid="sendEmail" data-type="email"><span class="button-icon hzi-font hzi-Email"></span><span class="label button-label">Email</span></a></div>		</div>		<div class="photoMeta">
-			<div class="uploader"><span class="userThumb" compid="uthumb"><img class="hzHouzzer hz-user-image" src="images/erinhoopes.jpg" data-type="profile" data-id="erinhoopes"></span><div class="userNameBox"><span class="one-line"><span class="hz-username hzHouzzer hzHCUserName" compid="uname" data-type="profile" data-id="erinhoopes">Erin Hoopes</span></span><div class="pro-rating"><div class="classification"><div class="cover"></div><div class="progress" style="width:96%;"></div></div><span class="pro-review-string"><span>8</span> Reviews</span></div></div></div>		<div class="photoInfo" style="height: 606px;"><a class="photo-title one-line" href="http://www.houzz.com/photos/1076491/Deluxe-in-Alexandria-traditional-kitchen-dc-metro" title="Deluxe in Alexandria" compid="title">Deluxe in Alexandria</a><div class="photoCounters">
-			<div class="photo-counter ideabook-counter">
-				<span class="counter-label">Ideabooks</span><span class="counter" compid="buzz">27,255</span>			</div>
-			<div class="photo-counter question-counter">
-				<span class="counter-label">Questions</span><span class="counter" compid="questions">18</span>			</div>
-		</div><div class="photoDescription">This whole house renovation done by Harry Braswell Inc. used Virginia Kitchen's design services (Erin Hoopes) and materials for the bathrooms, laundry and kitchens.  The custom millwork was done to replicate the look of the cabinetry in the open concept family room.  This completely custom renovation was eco-friend and is obtaining leed certification.  
-Photo's courtesy Greg Ha...<a class="colorLink bold-text icon-wrap" href="http://www.houzz.com/photos/1076491/Deluxe-in-Alexandria-traditional-kitchen-dc-metro" compid="more_comments">More <span class="more-icon"></span></a></div></div><div class="photoDetails bottom"><div class="stats"><span>“Cushions” — <span class="hz-username hzHouzzer hzHCUserName " data-type="profile" data-id="biapupia">biapupia</span> </span><br></div>		<div class="shareBtns">
-			<div class="social-button-row">
-				<a class="f icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(1,1076491);return false;" title="Share a link on Facebook"></a>
-				<span class="hz-pipe"></span>
-				<a class="t icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(2,1076491);return false;" title="Share a link on Twitter"></a>
-				<span class="hz-pipe"></span>
-				<a class="g icon" href="javascript:;" onclick="HZ.spaceActions.Share.openShareWindowForSpace(0,1076491);return false;" title="Share a link on Googlei+"></a>
-				<span class="hz-pipe"></span>
-				<a class="l icon" title="Link to the photo" href="http://www.houzz.com/photos/1076491/Deluxe-in-Alexandria-traditional-kitchen-dc-metro"></a>
-			</div>
-			<div class="action-button-row">
-								<a class="embed-combo-btn" title="Embed this photo on blog" href="javascript:;" onclick="javascript:showEmbedDialog(1076491);return false;"><span class="embed icon"></span><span class="textIcon">Embed</span></a>
-				<span class="hz-pipe"></span>
-				<a class="email-combo-btn" title="Email this photo" href="javascript:;" onclick="javascript:HZ.modules.BrowsePhotos.showSendSpaceEmailDialog(1076491);return false;"><span class="email icon"></span><span class="email textIcon">Email</span></a>
-								<span class="hz-pipe"></span>
-				<a class="ask-combo-btn" title="Ask a question" href="javascript:;" onclick="HZ.auth.Manager.signup(44);return false;"><span class="ask icon"></span><span class="textIcon">Question</span></a>
-							</div>
-		</div>
-		</div>		</div>
-	</div>
-	
-	
-	</div><div class="pagination"><ul class="paginationBar"><li class="active"><span class="pageNumberOn">1</span></li><li><a class="pageNumber" href="http://www.houzz.com/photos/p/8">2</a></li><li><a class="pageNumber" href="http://www.houzz.com/photos/p/16">3</a></li><li><a class="pageNumber" href="http://www.houzz.com/photos/p/24">4</a></li><li><a class="pageNumber" href="http://www.houzz.com/photos/p/32">5</a></li><li><a class="pageNumber" href="http://www.houzz.com/photos/p/40">6</a></li><li><a class="pageNumber" href="http://www.houzz.com/photos/p/48">7</a></li><li><a class="pageNumber" href="http://www.houzz.com/photos/p/56">8</a></li><li><a class="pageNumber" href="http://www.houzz.com/photos/p/64">9</a></li><li><a class="navigation-button next icon-wrap" href="http://www.houzz.com/photos/p/8">Next Page <span class="more-icon"></span></a></li></ul><div class="allPageNumbers"><a class="pnSmall" href="http://www.houzz.com/photos/p/32">5</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/112">15</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/192">25</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/272">35</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/352">45</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/432">55</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/512">65</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/592">75</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/672">85</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/752">95</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/832">105</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/912">115</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/992">125</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1072">135</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1152">145</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1232">155</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1312">165</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1392">175</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1472">185</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1552">195</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1632">205</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1712">215</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1792">225</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1872">235</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1952">245</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2032">255</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2112">265</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2192">275</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2272">285</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2352">295</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2432">305</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2512">315</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2592">325</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2672">335</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2752">345</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2832">355</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2912">365</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2992">375</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3072">385</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3152">395</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3232">405</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3312">415</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3392">425</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3472">435</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3552">445</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3632">455</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3712">465</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3792">475</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3872">485</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3952">495</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4032">505</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4112">515</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4192">525</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4272">535</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4352">545</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4432">555</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4512">565</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4592">575</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4672">585</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4752">595</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4832">605</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4912">615</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4984">624</a> </div></div>	</div><!-- End of RightSideBar -->
-</div><!--End of Container -->
-			<div id="PhotoContextMenu"> 
-			<input readonly="" id="PhotoContextMenuFocus" onblur="PhotoContextMenu.dismiss(event)">
-			<ul>
-				<li><a href="javascript:;" onclick="PhotoContextMenu.embedSpace()" oncontextmenu="return false">Embed photo</a></li>
-				<!--<li><a href='javascript:;' onclick='PhotoContextMenu.emailSpace()' oncontextmenu='return false'>Email photo</a></li>-->
-				<li><a href="javascript:;" onclick="PhotoContextMenu.openSpaceInNewWindow()" oncontextmenu="return false">Open Photo in New Window...</a></li>
-			</ul>
+			<div class="idea">
+				<a href="#">
+					<div class="idea-block">
+						<span>Идея</span>
 					</div>
+				</a>
+			</div>
+			<div class="large-heart-block">
+				<a href="#" class="blog-sprite large-heart-icon"></a>
+			</div>
+
+            </div>		
+
+            <div class="photoMeta">
+			<div class="uploader"><span class="userThumb" compid="uthumb"><img class="hzHouzzer hz-user-image" src="images/jweissdesign.jpg" data-type="profile" data-id="jweissdesign"></span><div class="userNameBox"><span class="one-line"><span class="hz-username hzHouzzer hzHCUserName" compid="uname" data-type="profile" data-id="jweissdesign">Jennifer Weiss Architecture</span></span></div></div>		<div class="photoInfo" style="height: 320px;">
+			<span itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating"><div class="pro-rating"><a class="review-star-link colorLink" compid="review" href="http://www.houzz.com/browseReviews/loridennis/lori-dennis-asid-leed-ap"><div class="classification"><div class="cover"></div><div ratingvalue="(50/10)" class="progress" style="width:20%;"></div></div><span class="pro-review-string"><span itemprop="reviewCount">&nbsp;97</span> Отзывов</span></a><meta itemprop="ratingValue" content="5"></div></span>
+
+
+			<div class="pro-description">Lori Dennis, ASID, LEED AP is an internationally known celebrity Interior Designer, speaker, best- selling author and star of HGTV’s The Real Designing Women.
+			Partnered with... 
+			<div class="clearfix"></div>
+			<a class="colorLink small-text icon-wrap more-info" compid="more" href="http://www.houzz.com/pro/loridennis/lori-dennis-asid-leed-ap">Подробнее <span class="more-icon"></span></a>
+
+			</div>
+			
+		</div>
+		<div class="photoDetails bottom">
+			<div class="blog-link">
+							
+							<div class="heart-block">
+								<a href="#" class="blog-icon icon-2">
+									<span class="blog-sprite heart-icon"></span>
+								</a> <br />
+								<a href="#">97 Нравится</a>
+							</div>
+							<div class="comment-block">
+								<a href="#" class="blog-icon icon-3">
+									<span class="blog-sprite comment-icon"></span>
+								</a> <br />
+								<a href="#">97 Коментарии</a>
+							</div>
+						</div>
+		</div>		
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	</div>
+	<div class="pagination-block">
+
+		<ul class="clearfix">
+			<li><a href="#" class="active">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">6</a></li>
+			<li><a href="#">7</a></li>
+			<li><a href="#">8</a></li>
+			<li><a href="#">9</a></li>
+			<li><a href="#" class="next-page">Следующая</a></li>
+		</ul>
+	</div>
+	<div class="pagination">
+	<div class="allPageNumbers"><a class="pnSmall" href="http://www.houzz.com/photos/p/32">5</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/112">15</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/192">25</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/272">35</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/352">45</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/432">55</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/512">65</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/592">75</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/672">85</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/752">95</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/832">105</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/912">115</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/992">125</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1072">135</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1152">145</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1232">155</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1312">165</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1392">175</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1472">185</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1552">195</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1632">205</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1712">215</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1792">225</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1872">235</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/1952">245</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2032">255</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2112">265</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2192">275</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2272">285</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2352">295</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2432">305</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2512">315</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2592">325</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2672">335</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2752">345</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2832">355</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2912">365</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/2992">375</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3072">385</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3152">395</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3232">405</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3312">415</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3392">425</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3472">435</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3552">445</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3632">455</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3712">465</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3792">475</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3872">485</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/3952">495</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4032">505</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4112">515</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4192">525</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4272">535</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4352">545</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4432">555</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4512">565</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4592">575</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4672">585</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4752">595</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4832">605</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4912">615</a> <a class="pnSmall" href="http://www.houzz.com/photos/p/4984">624</a> </div></div>	</div><!-- End of RightSideBar -->
+</div><!--End of Container -->
+			
 
 	
 	  </div><!-- end of #mainContent -->
-		</div><a id="ScrollToTopContainer" class="hide" href="javascript:;"><span><span class="hzi-font hzi-Arrow-U"></span></span></a><!-- end of #mainArea -->
-		<div id="hzHoverCardContainer" class="no-print"></div>
-		<div id="footerContainer" class="footerContainer normal-text">
-						<div id="footercontent" class="container" scopeid="footer">
-				<div class="footer-columns">
-				<div class="footer-column ">
-					<a class="homeLogo" href="http://www.houzz.com/" compid="home_logo"><img class="footerButtons footerButtonHomeLogo" src="images/spacer.gif"></a>
-					        <span class="dropdown-wrapper-2">
-            <span class="label">United States</span>
-            <span class="icon"></span>
-            <select id="siteSelector" onchange="window.location.href=this.options[this.selectedIndex].value">
-                <option value="" selected="">United States</option><option value="https://www.houzz.co.uk/siteSwitch/p=101/d=102/v=Mjg4NmI3ZjUtY2MwNy00NjExLTgwYzktYzU1MWFiN2IxZmJl/o=101">United Kingdom</option><option value="https://www.houzz.com.au/siteSwitch/p=101/d=103/v=Mjg4NmI3ZjUtY2MwNy00NjExLTgwYzktYzU1MWFiN2IxZmJl/o=101">Australia</option><option value="https://www.houzz.de/siteSwitch/p=101/d=104/v=Mjg4NmI3ZjUtY2MwNy00NjExLTgwYzktYzU1MWFiN2IxZmJl/o=101">Deutschland</option><option value="https://www.houzz.fr/siteSwitch/p=101/d=105/v=Mjg4NmI3ZjUtY2MwNy00NjExLTgwYzktYzU1MWFiN2IxZmJl/o=101">France</option>            </select>
-        </span>
-        				</div>	
-						<div class="footer-column company" scopeid="company">
-		<div class="footer-column-title">COMPANY</div>
-		<ul class="unstyled">
-			<li><a href="http://www.houzz.com/aboutUs" rel="nofollow" compid="about">About Houzz</a></li><li><a href="http://www.houzz.com/inTheNews" rel="nofollow" compid="news">In the News</a></li><li><a href="http://www.houzz.com/press" rel="nofollow" compid="press">Press Info</a></li><li><a href="http://www.houzz.com/termsOfUse" rel="nofollow" compid="terms">Terms of Use</a></li><li><a href="http://www.houzz.com/privacyPolicy" rel="nofollow" compid="privacy">Privacy Policy</a></li><li><a href="http://www.houzz.com/jobs" rel="nofollow" compid="jobs">Careers</a></li><li><a href="https://www.houzz.com/supportRedirect" rel="nofollow" compid="contact">Contact Us</a></li>		</ul>
 		</div>
-			<div class="footer-column explore" scopeid="explore">
-		<div class="footer-column-title">EXPLORE HOUZZ</div>
-		<ul class="unstyled">
-			<li><a href="http://www.houzz.com/buttonsAndBadges/ref=-footer" rel="nofollow" compid="badges">Buttons &amp; Badges</a></li><li><a href="http://www.houzz.com/mobileApps" rel="nofollow" compid="apps">Mobile Apps</a></li><li><a href="http://www.houzz.com/writeReview" compid="review">Write a Review</a></li><li><a href="https://www.houzz.com/supportRedirect" rel="nofollow" compid="faqs">FAQs</a></li><li><a href="http://www.houzz.com/advertiseOnHouzz" rel="nofollow" compid="advertise">Advertise</a></li><li><a href="http://www.houzz.com/pro" rel="nofollow" compid="pro_center">For Professionals</a></li><li><a href="http://www.houzz.com/sell" rel="nofollow" compid="sell">Sell on Houzz</a></li>		</ul>
-		</div>
-			<div class="footer-column connect" scopeid="connect">
-		<div class="footer-column-title">CONNECT WITH US</div>
-		<ul class="unstyled">
-			<li><a href="http://twitter.com/Houzz" title="twitter" rel="nofollow" target="_blank"><i class="hzi-font hzi-Twitter-Circle"></i><span class="media-title">Twitter</span></a></li><li><a href="http://www.facebook.com/houzz" title="facebook" rel="nofollow" target="_blank"><i class="hzi-font hzi-Facebook-Circle"></i><span class="media-title">Facebook</span></a></li><li><a href="https://plus.google.com/+houzz/" title="google+" rel="publisher" target="_blank"><i class="hzi-font hzi-Google-Circle"></i><span class="media-title">Google+</span></a></li><li><a href="http://feeds.feedburner.com/houzz" title="rss" rel="alternate" type="application/rss+xml" target="_blank"><i class="hzi-font hzi-Rss-Circle"></i><span class="media-title">RSS</span></a></li><li><a href="https://www.youtube.com/channel/UC6kpDTAXXNV5SEP5g1HoPTA" title="YouTube" rel="publisher" target="_blank"><i class="hzi-font hzi-Youtube-Circle"></i><span class="media-title">YouTube</span></a></li>		</ul>
-		</div>
-					</div>
-				<div id="footerbanner" class="container text-center">
-					<a rel="nofollow" href="http://www.houzz.com/termsOfUse#copyrights" compid="copyright">©&nbsp;2015 Houzz Inc.</a> Houzz® The new way to design your home™</div>
-				</div>
+
+		
+		
 			</div>	
-									<img src="images/k=MTQyMTkzNzkyOCwyLDAsMjg4NmI3ZjUtY2MwNy00NjExLTgwYzktYzU1MWFiN2IxZmJlLE4sMjE3Ljc3LjIxNS45NCwvVUEsMCwwLDAsMCw2MDAwMiwwLDAsMTA4NzM4NzQ3NyxDUE0sVVNELDAsLCw7O2Q4NDllODA5ZDRiNmE0ZGJlMWZlZDlmMDR" style="position:absolute;top:-5px;left:-5000px;height:1px;width:1px;">
-					<img src="images/k=2_eJwNzE0OwiAQQOEr2ZYeQEttbJgh2EECW00Q6g4NP6e3i7f8HpCqQHvDtlc55QIhF8HnBFvOgt+Y5C5gbzthMAJ_fpHbAtuJwQKjMNAhXd82vgIYF9xW5GEKVjYcHV_9k6SS6B4XwX2BNhegcwJSAzbdkDwTU86yJWajLY7WIBddLfnRmTVCewWk9" style="position:absolute;top:-4px;left:-5000px;height:1px;width:1px;">
+									
 	<script src="js/fancy.js"></script>	
+	<script src="js/script.js"></script>
 </body></html>

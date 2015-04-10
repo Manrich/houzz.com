@@ -30,11 +30,11 @@
 	<link rel="icon" href="http://www.houzz.com/favicon.ico" type="image/x-icon"> 
 
 	<link href="http://www.houzz.com/getGalleries/featured/out-rss" title="RSS 2.0" type="application/rss+xml" rel="alternate">
-	<title>Blog</title>
+	<title>Tips</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
 	</head>
 <body class="en-US hbs new-std-header secondary-rooms-header">
+
 <div id="navContainer" class="trackMe" scopeid="headerv6">
 	<div id="navHeader" class="no-print white-header  ">
 
@@ -156,7 +156,23 @@
 
 								</div>
 							</div>
-							<div class="clearfix"></div>
+							<div class="proSearchBar clearfix" compid="searchbar">
+								<ul class="proSearch form-inline clearfix">
+									<li class="pull-right">
+										<div class="select tips-slct">
+											<a href="javascript:void(0);" class="slct">Сортировка</a>
+											<ul class="drop" style="display: none;">
+												<li><a>Города:по убыванию</a></li>
+												<li><a>Города:по возрастанию</a></li>
+											</ul>
+											<input type="hidden" id="select">
+										</div>
+									</li>
+									<li class="pull-right">
+										<a href="create discussion.html" class="create-discus">Создать обсуждение</a>
+									</li>
+								</ul>
+							</div>
 							<div class="browseListBody clearfix " id="browseSpacesContext" lb-context="browseDescriptor_:707::::11::">
 
 								<div class="ic whiteCard xl tips portrait" objid="58418" lb-sid="58418" posid="0_0">
@@ -168,13 +184,7 @@
 					
 									</a>
 			</div>
-			<div class="idea">
-				<a href="#">
-					<div class="idea-block">
-						<span>Идея</span>
-					</div>
-				</a>
-			</div>
+			
 			<div class="large-heart-block">
 				<a href="#" class="blog-sprite large-heart-icon"></a>
 			</div>
@@ -235,13 +245,7 @@
 					
 									</a>
 			</div>
-			<div class="idea">
-				<a href="#">
-					<div class="idea-block">
-						<span>Идея</span>
-					</div>
-				</a>
-			</div>
+			
 			<div class="large-heart-block">
 				<a href="#" class="blog-sprite large-heart-icon"></a>
 			</div>
@@ -293,114 +297,8 @@
 		</div>		
 		</div>
 	</div>
-	<div class="clearfix"></div>
-	<div id="carousel-tovar" class="carousel slide" data-ride="carousel('pause')">
 
-	          <!-- Wrapper for slides -->
-	          <div class="carousel-inner main-slider tovar-slider">
-	          <div class="item active clearfix">
-	          	
-	            <div class="tovar-block">
-	            	<div class="tovar-img">
-	            		<img src="images/new/tovar-1.png" alt="" />
-	            		<div class="add-basket-block">
-	            			<a href="#" class="add-basket"></a>
-	            		</div>
-	            		
-	            	</div>
-	            	<h3>Название</h3>
-	            	<p>10 000 грн</p>
-	            </div>
-	            <div class="tovar-block">
-	            	<div class="tovar-img">
-	            		<img src="images/new/tovar-2.jpg" alt="" />
-	            		<div class="add-basket-block">
-	            			<a href="#" class="add-basket"></a>
-	            		</div>
-	            	</div>
-	            	<h3>Название</h3>
-	            	<p>10 000 грн</p>
-	            </div>
-	            <div class="tovar-block">
-	            	<div class="tovar-img">
-	            		<img src="images/new/tovar-1.png" alt="" />
-	            		<div class="add-basket-block">
-	            			<a href="#" class="add-basket"></a>
-	            		</div>
-	            	</div>
-	            	<h3>Название</h3>
-	            	<p>10 000 грн</p>
-	            </div>
-	            <div class="tovar-block">
-	            	<div class="tovar-img">
-	            		<img src="images/new/tovar-2.jpg" alt="" />
-	            		<div class="add-basket-block">
-	            			<a href="#" class="add-basket"></a>
-	            		</div>
-	            	</div>
-	            	<h3>Название</h3>
-	            	<p>10 000 грн</p>
-	            </div>
-	           
-	          </div>
-	          
-	          <div class="item clearfix">
-	          
-	            <div class="tovar-block">
-	            	<div class="tovar-img">
-	            		<img src="images/new/tovar-1.png" alt="" />
-	            		<div class="add-basket-block">
-	            			<a href="#" class="add-basket"></a>
-	            		</div>
-	            	</div>
-	            	<h3>Название</h3>
-	            	<p>10 000 грн</p>
-	            </div>
-	            <div class="tovar-block">
-	            	<div class="tovar-img">
-	            		<img src="images/new/tovar-2.jpg" alt="" />
-	            		<div class="add-basket-block">
-	            			<a href="#" class="add-basket"></a>
-	            		</div>
-	            	</div>
-	            	<h3>Название</h3>
-	            	<p>10 000 грн</p>
-	            </div>
-	            <div class="tovar-block">
-	            	<div class="tovar-img">
-	            		<img src="images/new/tovar-1.png" alt="" />
-	            		<div class="add-basket-block">
-	            			<a href="#" class="add-basket"></a>
-	            		</div>
-	            	</div>
-	            	<h3>Название</h3>
-	            	<p>10 000 грн</p>
-	            </div>
-	            <div class="tovar-block">
-	            	<div class="tovar-img">
-	            		<img src="images/new/tovar-2.jpg" alt="" />
-	            		<div class="add-basket-block">
-	            			<a href="#" class="add-basket"></a>
-	            		</div>
-	            	</div>
-	            	<h3>Название</h3>
-	            	<p>10 000 грн</p>
-	            </div>
-	            
-	          </div>
-	          
-	          </div>
-
-	          <!-- Controls -->
-	          <a class="tovar-control left" href="#carousel-tovar" data-slide="prev">
-	          <span class="tovar-prev"></span>
-	          </a>
-	          <a class="tovar-control right" href="#carousel-tovar" data-slide="next">
-	          <span class="tovar-right"></span>
-	          </a>
-	        </div>	
-
-				</div>
+							</div>
 
 							<div class="pagination-block">
 								<ul class="clearfix">
@@ -427,13 +325,3 @@
 <script src="js/script.js"></script>
 </body>
 </html>
-						
-
-
-
-
-
-
-
-
-				        
