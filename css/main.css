@@ -1709,6 +1709,11 @@ position: relative;
 	vertical-align: middle;
 	position: relative;
 }
+	.right-edit .create-idea{
+		float: none;
+		width: 250px;
+		margin: auto;
+	}
 .photo-del{
 	display: block;
 	position: absolute;
@@ -1718,6 +1723,20 @@ position: relative;
 	height: 28px;
 	background: url(../images/new/phto-del.png);
 }
+#send-sms{
+	font-family: 'MyriadProLight';
+	padding-top: 10px;
+	
+}
+	#send-sms textarea{
+		margin-bottom: 10px;
+	}
+.ideas-project-2{
+	margin-left: -17px;
+}	
+	.ideas-project-2 .ideas-block{
+		margin-left: 17px;
+	}
 
 @media (max-width: 1279px){
 	.rightSideContent .tovar-slider .tovar-block{
@@ -1742,5 +1761,8 @@ position: relative;
 	}
 	.cell-desc{
 		width: 450px;
+	}
+	.ideas-project-2 .ideas-block,.ideas-project-2 .ideas-img{
+		width: 305px;
 	}
 }
