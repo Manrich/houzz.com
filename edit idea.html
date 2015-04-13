@@ -18,7 +18,7 @@
 	<link rel="publisher" href="https://plus.google.com/+houzz/">
 	<link rel="icon" href="http://www.houzz.com/favicon.ico" type="image/x-icon"> 
 	<link href="http://www.houzz.com/getGalleries/featured/out-rss" title="RSS 2.0" type="application/rss+xml" rel="alternate">
-	<title>create discussion</title>
+	<title>edit idea</title>
 
 </head>
 <body class="en-US hbs new-std-header secondary-rooms-header">
@@ -111,71 +111,83 @@
 <div id="mainArea">
 	<div id="mainContent">
 		<div class="container">
-		<div class="profile-header view">
-			 	<div class="profile-cover">
-			 		<div class="profile-pic-container">
-						<a class="profile-pic-border" href="#">
-							<img class="profile-pic" width="173" height="173" id="mainUserProfilePic" src="images/new/unnamed.jpg">
-						</a>
-					</div>
-					<img id="coverImage" class="cover-image custom-cover " src="http://st.houzz.com/simgs/d2426745046a919c_17-7851/home-design.jpg">
-					<div class="profile-info">
-						<div class="profile-title">
-							<a class="profile-full-name" href="#">Галина Петрова</a>
-						</div>
-					</div>
-			 	</div>
-
-			 </div>
-			 <div class="profile-link">
-				 <ul class="clearfix">
-					<li><a href="#">профиль</a></li>
-					<li><a href="#">идеи</a></li>
-					<li class="with-sms">
-						<a href="#">сообщения</a>
-						<div class="sms-number">
-							<span>3</span>
-						</div>
-						<div class="sms-list">
-							<ul>
-								<li><a href="#">Личные +1</a></li>
-								<li><a href="#">Комментарии +1</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="active"><a href="#">советы</a></li>
-					<li><a href="#">заказы</a></li>
-				</ul>
-			</div>
-			<h3 class="main-h3">Создать обсуждение</h3>
-			<div class="col-10">
+		<div class="createidea">
+			<h3 class="main-h3">Редактировать идею</h3>
+			
 				<form action="">
 					<fieldset class="field-discus">
 						<input type="text" placeholder="Введите название ..." /> <br />
 						<textarea placeholder="Введите описание ..."></textarea > <br />
-						<p class="discus-p">В описании Вы можете добавлять фотографии в текст</p>
+						<p class="discus-p">
+							<input type="checkbox" id="albom" />
+							<label for="albom">Сделать альбом публичным для всех</label>
+						</p>
+						<div class="edit-idea clearfix">
+							<div class="edit-block">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="edit-desc">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus id, culpa itaque magni, nihil distinctio officiis
+								</div>
+								<a href="#">
+										<div class="idea-block delete-icon">
+											<span>Удалить</span>
+										</div>
+									</a>
+							</div>
+							<div class="edit-block">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="edit-desc">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus id, culpa itaque magni, nihil distinctio officiis
+								</div>
+								<a href="#">
+										<div class="idea-block delete-icon">
+											<span>Удалить</span>
+										</div>
+									</a>
+							</div>
+							<div class="edit-block">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="edit-desc">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus id, culpa itaque magni, nihil distinctio officiis
+								</div>
+								<a href="#">
+										<div class="idea-block delete-icon">
+											<span>Удалить</span>
+										</div>
+									</a>
+							</div>
+							<div class="edit-block">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="edit-desc">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus id, culpa itaque magni, nihil distinctio officiis
+								</div>
+								<a href="#">
+										<div class="idea-block delete-icon">
+											<span>Удалить</span>
+										</div>
+									</a>
+							</div>
+							<div class="edit-block">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="edit-desc">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus id, culpa itaque magni, nihil distinctio officiis
+								</div>
+								<a href="#">
+										<div class="idea-block delete-icon">
+											<span>Удалить</span>
+										</div>
+									</a>
+							</div>
+						</div>
 						<div class="var-input">
 							<input type="submit" value="Отменить" />
 							<input type="submit" value="Создать" />
 						</div>
+							
 					</fieldset>
 				</form>
-			</div>
-			<div class="col-2">
-				<div class="load-photo">
-					<p>Заглавное фото</p>
-					<button>Загрузить фото</button>
-				</div>
-
-				<div class="select tips-slct">
-					<a href="javascript:void(0);" class="slct">Виберите тему</a>
-					<ul class="drop" style="display: none;">
-						<li><a>Тема 1</a></li>
-						<li><a>Тема 2</a></li>
-					</ul>
-					<input type="hidden" id="select">
-				</div>
-			</div>
+		</div>
+			
 		</div>
 	</div>
 </div>

@@ -136,25 +136,451 @@
 			 </div>
 			 <div class="profile-link">
 				 <ul class="clearfix">
-					<li class="active"><a href="#">профиль</a></li>
-					<li><a href="#">идеи</a></li>
-					<li><a href="#">сообщения</a></li>
-					<li><a href="#">советы</a></li>
-					<li><a href="#">заказы</a></li>
+					<li class="active" onclick="opcl(mydivs,'#profile'); return false;"><a href="#">профиль</a></li>
+					<li><a href="#" onclick="opcl(mydivs,'#ideas'); return false;">идеи</a></li>
+					<li class="with-sms">
+						<a href="#">сообщения</a>
+						<div class="sms-number">
+							<span>3</span>
+						</div>
+						<div class="sms-list">
+							<ul>
+								<li onclick="opcl(mydivs,'#personal'); return false;"><a href="#">Личные +1</a></li>
+								<li onclick="opcl(mydivs,'#commentary'); return false;"><a href="#">Комментарии +1</a></li>
+							</ul>
+						</div>
+					</li>
+					<li onclick="opcl(mydivs,'#tips'); return false;"><a href="#">советы</a></li>
+					<li onclick="opcl(mydivs,'#orders'); return false;"><a href="#">заказы</a></li>
 				</ul>
 			</div>
-			<div id="profile">
+			<div id="profile" class="clearfix">
 				<div class="col-10">
+					<div class="med-header text-xs-medium"><a href="№">64 Идеи <span class="more-icon"></span></a></div>
+					<div class="users-project clearfix">
+						<div class="project-block">
+							<div class="project-img">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="idea">
+									<a href="#">
+										<div class="idea-block delete-icon">
+											<span>Удалить</span>
+										</div>
+									</a>
+								</div>
+								<div class="large-heart-block">
+									<a href="#" class="blog-sprite large-heart-icon"></a>
+								</div>
+							</div>
+							<div class="project-desc">
+								<a href="#">Детская спальня</a>
+								<p>12 Идей</p>
+							</div>
+						</div>
+						<div class="project-block">
+							<div class="project-img">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="idea">
+									<a href="#">
+										<div class="idea-block delete-icon">
+											<span>Удалить</span>
+										</div>
+									</a>
+								</div>
+								<div class="large-heart-block">
+									<a href="#" class="blog-sprite large-heart-icon"></a>
+								</div>
+							</div>
+							<div class="project-desc">
+								<a href="#">Детская спальня</a>
+								<p>12 Идей</p>
+							</div>
+						</div>
+						<div class="project-block">
+							<div class="project-img">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="idea">
+									<a href="#">
+										<div class="idea-block delete-icon">
+											<span>Удалить</span>
+										</div>
+									</a>
+								</div>
+								<div class="large-heart-block">
+									<a href="#" class="blog-sprite large-heart-icon"></a>
+								</div>
+							</div>
+							<div class="project-desc">
+								<a href="#">Детская спальня</a>
+								<p>12 Идей</p>
+							</div>
+						</div>
+						<div class="project-block">
+							<div class="project-img">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="idea">
+									<a href="#">
+										<div class="idea-block delete-icon">
+											<span>Удалить</span>
+										</div>
+									</a>
+								</div>
+								<div class="large-heart-block">
+									<a href="#" class="blog-sprite large-heart-icon"></a>
+								</div>
+							</div>
+							<div class="project-desc">
+								<a href="#">Детская спальня</a>
+								<p>12 Идей</p>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<a href="#" class="more">Еще</a>
+				</div>
+				<div class="col-2">
+					<div class="profile-info">
+						<header>
+							<span class="name-icon">Данные:</span>
+						</header>
+						Алина Петрова <br />
+						0445063958
+					</div>
+					<div class="profile-info">
+						<header>
+							<span class="gps-icon">Местонахождение:</span>
+						</header>
+						Украина,Киев <br />
+						пр. Московский 34а
+					</div>
+				</div>
+			</div><!-- profile-->
+
+			<div id="ideas" class="clearfix">
+				<div class="col-2 col-1">
+					<div class="sidebar collapsible" scopeid="filterProProducts">
+						<div class="sidebar-header">193 Идеи&nbsp;<span class="down-icon toggle"></span></div>
+						<div class="sidebar-body">		
+							<ul id="list-child">
+								<li class="sidebar-item">			
+									<a class="sidebar-item-label" href="#">Дача</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-10 col-11 clearfix">
+					<div class="create-idea">
+						<a href="create idea.html">Создать идею</a>
+					</div>
+					<div class="ideas-project clearfix">
+						<div class="ideas-block">
+							<div class="ideas-img">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="idea">
+									<a href="#">
+										<div class="idea-block delete-icon ideas-left">
+											<span>Удалить</span>
+										</div>
+									</a>
+									<a href="edit idea.html">
+										<div class="idea-block edit-icon ideas-left">
+											<span>Редакт.</span>
+										</div>
+									</a>
+									
+								</div>
+							</div>
+							<div class="project-desc">
+								<a href="#">Детская спальня</a>
+								<p>12 Идей</p>
+							</div>
+						</div>
+						<div class="ideas-block">
+							<div class="ideas-img">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="idea">
+									<a href="#">
+										<div class="idea-block delete-icon ideas-left">
+											<span>Удалить</span>
+										</div>
+									</a>
+									<a href="edit idea.html">
+										<div class="idea-block edit-icon ideas-left">
+											<span>Редакт.</span>
+										</div>
+									</a>
+									
+								</div>
+							</div>
+							<div class="project-desc">
+								<a href="#">Детская спальня</a>
+								<p>12 Идей</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- ideas-->
+			<div id="personal">
+				<table>
+					<tr>
+						<td>
+							<h4 class="personal-h3">Вадим Иванов</h4>
+							<p class="per-date">12.03.2015 в 13:01</p>
+						</td>
+						<td>
+							<p class="per-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</td>
+						<td>
+							<a href="#" class="read-this">Прочитать</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h4 class="personal-h3">Вадим Иванов</h4>
+							<p class="per-date">12.03.2015 в 13:01</p>
+						</td>
+						<td>
+							<p class="per-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi ut placeat beatae, sapiente ratione quia quo.</p>
+						</td>
+						<td>
+							<a href="#" class="read-this">Прочитать</a>
+						</td>
+					</tr>
+				</table>
+				<div style="text-align:center">
+					<a href="#">Показать еще сообщения <span class="down-icon toggle"></span></a>
+				</div>
+			</div><!-- personal -->
+
+			<div id="commentary">
+				<table>
+					<tr>
+						<td>
+							<div class="uploader"><span class="userThumb" compid="uthumb"><img class="hzHouzzer hz-user-image" src="images/jweissdesign.jpg" data-type="profile" data-id="jweissdesign"></span>
+								<div class="userNameBox"><span class="one-line"><span class="hz-username hzHouzzer hzHCUserName" compid="uname" data-type="profile" data-id="jweissdesign">Jennifer Weiss Architecture</span></span>
+								</div>
+							</div>
+							<div class="com-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eum, optio fugit! Voluptate necessitatibus provident debitis adipisci molestias porro reprehenderit aspernatur consequatur aliquid accusantium, non dolorem ea numquam animi recusandae.
+							</div>
+							<div class="com-link">
+								<span>12.03.2015 в 13:01</span>
+								<a href="#" class="small-heart">3 Нравится</a>
+								<a href="#">Ответить</a>
+							</div>
+						</td>
+						<td>
+							<img src="images/new/blog.jpg" alt="" class="com-img" />
+						</td>
+						<td width="180">
+							<p class="per-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="uploader"><span class="userThumb" compid="uthumb"><img class="hzHouzzer hz-user-image" src="images/jweissdesign.jpg" data-type="profile" data-id="jweissdesign"></span>
+								<div class="userNameBox"><span class="one-line"><span class="hz-username hzHouzzer hzHCUserName" compid="uname" data-type="profile" data-id="jweissdesign">Jennifer Weiss Architecture</span></span>
+								</div>
+							</div>
+							<div class="com-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eum, optio fugit! Voluptate necessitatibus provident debitis adipisci molestias porro reprehenderit aspernatur consequatur aliquid accusantium, non dolorem ea numquam animi recusandae.
+							</div>
+							<div class="com-link">
+								<span>12.03.2015 в 13:01</span>
+								<a href="#" class="small-heart">3 Нравится</a>
+								<a href="#">Ответить</a>
+							</div>
+						</td>
+						<td>
+							<img src="images/new/blog.jpg" alt="" class="com-img" />
+						</td>
+						<td width="180">
+							<p class="per-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</p>
+						</td>
+					</tr>
+				</table>
+				<div style="text-align:center">
+					<a href="#">Показать еще сообщения <span class="down-icon toggle"></span></a>
+				</div>
+			</div><!-- commentary -->
+			<div id="tips">
+				<div class="col-2 col-1">
+					<div class="sidebar collapsible" scopeid="filterProProducts">
+						<div class="sidebar-header">193 Идеи&nbsp;<span class="down-icon toggle"></span></div>
+						<div class="sidebar-body">		
+							<ul id="list-child">
+								<li class="sidebar-item">			
+									<a class="sidebar-item-label" href="#">Кухня</a>
+								</li>
+								<li class="sidebar-item">			
+									<a class="sidebar-item-label" href="#">Ванна</a>
+								</li>
+								<li class="sidebar-item">			
+									<a class="sidebar-item-label" href="#">Спальня</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-10 col-11 clearfix">
+					<div class="create-idea">
+						<a href="create discussion.html">Создать обсуждение</a>
+					</div>
+					<div class="ideas-project clearfix">
+						<div class="ideas-block">
+							<div class="ideas-img">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="idea">
+									<a href="#">
+										<div class="idea-block delete-icon ideas-left">
+											<span>Удалить</span>
+										</div>
+									</a>
+									<a href="edit discussion.html">
+										<div class="idea-block edit-icon ideas-left">
+											<span>Редакт.</span>
+										</div>
+									</a>
+									
+								</div>
+							</div>
+							<div class="project-desc">
+								<a href="#">Детская спальня</a>
+								<p class="date-dis">25 Февраля 2015</p>
+							</div>
+						</div>
+						<div class="ideas-block">
+							<div class="ideas-img">
+								<img src="images/new/blog.jpg" alt="" />
+								<div class="idea">
+									<a href="#">
+										<div class="idea-block delete-icon ideas-left">
+											<span>Удалить</span>
+										</div>
+									</a>
+									<a href="edit discussion.html">
+										<div class="idea-block edit-icon ideas-left">
+											<span>Редакт.</span>
+										</div>
+									</a>
+									
+								</div>
+							</div>
+							<div class="project-desc">
+								<a href="#">Детская спальня</a>
+								<p class="date-dis">25 Февраля 2015</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- tips -->
+			<div id="orders">
+				<table>
+					<thead>
+						<tr>
+							<td></td>
+							<td>Наименование товара</td>
+							<td>Цена за 1шт.</td>
+							<td>Количество</td>
+							<td>Цена итого</td>
+							<td>Статус заказа</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td width="190">
+								<img src="images/new/blog.jpg" width="175" height="130" alt="" />
+							</td>
+							<td class="cell-desc">
+								<p class="order-text">Lorem ipsum dolor sit amet</p>
+							</td>
+							<td>
+								21 000 грн.
+							</td>
+							<td>
+								2
+							</td>
+							<td>
+								42 000 грн.
+							</td>
+							<td>
+								<p>Выполнен</p>
+								<p>12.03.2015</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="190">
+								<img src="images/new/blog.jpg" width="175" height="130" alt="" />
+							</td>
+							<td class="cell-desc">
+								<p class="order-text">Lorem ipsum dolor sit amet</p>
+							</td>
+							<td>
+								21 000 грн.
+							</td>
+							<td>
+								2
+							</td>
+							<td>
+								42 000 грн.
+							</td>
+							<td>
+								<p>Выполнен</p>
+								<p>12.03.2015</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!-- orders -->
+			<div id="profile-edit" class="clearfix">
+				<div class="col-10">
+					<h3 class="main-h3">Ваше профильное фото</h3>
+					<div class="columns clearfix">
+						<div class="left-edit">
+							<img src="images/new/profile-photo.jpg" alt="" />
+							<a href="#" class="photo-del"></a>
+						</div>
+						<div class="right-edit">
+							<div class="create-idea">
+								<a href="#">Для загрузки фотографии кликните на +</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
 					
 				</div>
-				<div class="col-2"></div>
 			</div>
 		</div>
 	</div>
 </div>
 
 
+<script>
+	var mydivs=new Array('#profile','#orders','#commentary','#tips','#personal','#ideas');
 
+	function opcl(arr, e){
+	    if ($(e).css('display') == 'none'){
+	        for(var i in arr){   
+	           $(arr[i]).hide();     
+	        }
+	        $(e).show();       
+	    }
+	}
+	$(document).ready(function () {
+  
+	
+	$('.profile-link ul li').click(function() {
+    $('.profile-link ul li').removeClass('active');
+    $(this).addClass('active');
+  });
+});
+</script>
 
 </body>
 </html>

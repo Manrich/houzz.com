@@ -18,7 +18,7 @@
 	<link rel="publisher" href="https://plus.google.com/+houzz/">
 	<link rel="icon" href="http://www.houzz.com/favicon.ico" type="image/x-icon"> 
 	<link href="http://www.houzz.com/getGalleries/featured/out-rss" title="RSS 2.0" type="application/rss+xml" rel="alternate">
-	<title>create discussion</title>
+	<title>edit discussion</title>
 
 </head>
 <body class="en-US hbs new-std-header secondary-rooms-header">
@@ -111,7 +111,7 @@
 <div id="mainArea">
 	<div id="mainContent">
 		<div class="container">
-		<div class="profile-header view">
+			<div class="profile-header view">
 			 	<div class="profile-cover">
 			 		<div class="profile-pic-container">
 						<a class="profile-pic-border" href="#">
@@ -129,7 +129,7 @@
 			 </div>
 			 <div class="profile-link">
 				 <ul class="clearfix">
-					<li><a href="#">профиль</a></li>
+					<li class="active"><a href="#">профиль</a></li>
 					<li><a href="#">идеи</a></li>
 					<li class="with-sms">
 						<a href="#">сообщения</a>
@@ -143,20 +143,20 @@
 							</ul>
 						</div>
 					</li>
-					<li class="active"><a href="#">советы</a></li>
+					<li><a href="#">советы</a></li>
 					<li><a href="#">заказы</a></li>
 				</ul>
 			</div>
-			<h3 class="main-h3">Создать обсуждение</h3>
+			<h3 class="main-h3">Редактировать обсуждение</h3>
 			<div class="col-10">
 				<form action="">
 					<fieldset class="field-discus">
-						<input type="text" placeholder="Введите название ..." /> <br />
-						<textarea placeholder="Введите описание ..."></textarea > <br />
-						<p class="discus-p">В описании Вы можете добавлять фотографии в текст</p>
-						<div class="var-input">
-							<input type="submit" value="Отменить" />
-							<input type="submit" value="Создать" />
+						<input type="text" placeholder="Введите название ..." value="Текст текст текст" /> <br />
+						<textarea placeholder="Введите описание ..." style="height:200px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptatem placeat reiciendis, qui repellat labore unde aperiam, minus hic illum officiis reprehenderit tempora eos quod. Ab porro, nemo doloremque eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, laborum? Voluptatum officia nam, aliquam ab totam impedit, corporis magnam quis sequi fuga cupiditate perferendis omnis, fugit ullam. Magnam, doloremque, libero.</textarea > <br />
+						
+						<div class="var-input" style="margin-top:10px;">
+							<input type="submit" value="Отмена" />
+							<input type="submit" value="Сохранить" />
 						</div>
 					</fieldset>
 				</form>
@@ -164,7 +164,10 @@
 			<div class="col-2">
 				<div class="load-photo">
 					<p>Заглавное фото</p>
-					<button>Загрузить фото</button>
+					<div class="mini-photo">
+						<img src="images/new/blog.jpg" alt="" width="115" height="85" />
+						<a href="#" class="del-photo"></a>
+					</div>
 				</div>
 
 				<div class="select tips-slct">
@@ -174,6 +177,10 @@
 						<li><a>Тема 2</a></li>
 					</ul>
 					<input type="hidden" id="select">
+				</div>
+				<div class="var-del">
+					<span>Кухня</span>
+					<a href="#" class="del-photo"></a>
 				</div>
 			</div>
 		</div>

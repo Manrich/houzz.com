@@ -18,7 +18,7 @@
 	<link rel="publisher" href="https://plus.google.com/+houzz/">
 	<link rel="icon" href="http://www.houzz.com/favicon.ico" type="image/x-icon"> 
 	<link href="http://www.houzz.com/getGalleries/featured/out-rss" title="RSS 2.0" type="application/rss+xml" rel="alternate">
-	<title>create discussion</title>
+	<title>create idea</title>
 
 </head>
 <body class="en-US hbs new-std-header secondary-rooms-header">
@@ -130,7 +130,7 @@
 			 <div class="profile-link">
 				 <ul class="clearfix">
 					<li><a href="#">профиль</a></li>
-					<li><a href="#">идеи</a></li>
+					<li class="active"><a href="#">идеи</a></li>
 					<li class="with-sms">
 						<a href="#">сообщения</a>
 						<div class="sms-number">
@@ -143,39 +143,29 @@
 							</ul>
 						</div>
 					</li>
-					<li class="active"><a href="#">советы</a></li>
+					<li><a href="#">советы</a></li>
 					<li><a href="#">заказы</a></li>
 				</ul>
 			</div>
-			<h3 class="main-h3">Создать обсуждение</h3>
-			<div class="col-10">
+		<div class="createidea">
+			<h3 class="main-h3">Создать идею</h3>
+			
 				<form action="">
 					<fieldset class="field-discus">
-						<input type="text" placeholder="Введите название ..." /> <br />
-						<textarea placeholder="Введите описание ..."></textarea > <br />
-						<p class="discus-p">В описании Вы можете добавлять фотографии в текст</p>
+						<input type="text" placeholder="Введите название альбома ..." /> <br />
+						<textarea placeholder="Введите описание альбома ..."></textarea > <br />
+						<p class="discus-p">
+							<input type="checkbox" id="albom" />
+							<label for="albom">Сделать альбом публичным для всех</label>
+						</p>
 						<div class="var-input">
 							<input type="submit" value="Отменить" />
 							<input type="submit" value="Создать" />
 						</div>
 					</fieldset>
 				</form>
-			</div>
-			<div class="col-2">
-				<div class="load-photo">
-					<p>Заглавное фото</p>
-					<button>Загрузить фото</button>
-				</div>
-
-				<div class="select tips-slct">
-					<a href="javascript:void(0);" class="slct">Виберите тему</a>
-					<ul class="drop" style="display: none;">
-						<li><a>Тема 1</a></li>
-						<li><a>Тема 2</a></li>
-					</ul>
-					<input type="hidden" id="select">
-				</div>
-			</div>
+		</div>
+			
 		</div>
 	</div>
 </div>
