@@ -25,7 +25,7 @@
 	<link rel="icon" href="http://www.houzz.com/favicon.ico" type="image/x-icon"> 
 
 	<link href="http://www.houzz.com/getGalleries/featured/out-rss" title="RSS 2.0" type="application/rss+xml" rel="alternate">
-	<title>Unauthorized user</title>
+	<title>Load photo</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	</head>
 <body class="en-US hbs new-std-header secondary-rooms-header">
@@ -136,82 +136,70 @@
 			 </div>
 			 <div class="profile-link">
 				 <ul class="clearfix">
-					<li class="active" onclick="opcl(mydivs,'#send-sms'); return false;"><a href="#">отправить сообщение</a></li>
-					<li><a href="#" onclick="opcl(mydivs,'#ideas'); return false;">идеи</a></li>
-				</ul>
-			</div>
-			<div id="send-sms">
-				
-					<form action="">
-					<fieldset class="field-discus">
-						<input type="text" placeholder="Тема сообщения ..."> <br>
-						<textarea placeholder="Текст сообщения ..."></textarea> <br>
-						
-						<div class="var-input">
-							<input type="submit" value="Отправить">
-							
+					<li onclick="opcl(mydivs,'#profile'); return false;">
+						<a href="#">обзор</a>
+						<span class="edit-sp">Ред.</span>
+					</li>
+					<li class="active"><a href="#" onclick="opcl(mydivs,'#projects'); return false;">проекты</a></li>
+					<li><a href="#">идеи</a></li>
+					<li><a href="#">отзывы</a></li>
+					<li class="with-sms">
+						<a href="#">сообщения</a>
+						<div class="sms-number">
+							<span>3</span>
 						</div>
-					</fieldset>
-				</form>
-				
-			</div>
-			<div id="ideas" class="clearfix">
-				<div class="col-2 col-1">
-					<div class="sidebar collapsible" scopeid="filterProProducts">
-						<div class="sidebar-header">193 Идеи&nbsp;<span class="down-icon toggle"></span></div>
-						<div class="sidebar-body">		
-							<ul id="list-child">
-								<li class="sidebar-item">			
-									<a class="sidebar-item-label" href="#">Дача</a>
-								</li>
+						<div class="sms-list">
+							<ul>
+								<li onclick="opcl(mydivs,'#personal'); return false;"><a href="#">Личные +1</a></li>
+								<li onclick="opcl(mydivs,'#commentary'); return false;"><a href="#">Комментарии +1</a></li>
 							</ul>
 						</div>
-					</div>
+					</li>
+					<li><a href="#">блог</a></li>
+					<li onclick="opcl(mydivs,'#tips'); return false;"><a href="#">советы</a></li>
+					<li onclick="opcl(mydivs,'#orders'); return false;"><a href="#">заказы</a></li>
+				</ul>
+			</div>
+			<div id="load-photo">
+				<h3 class="main-h3">Загрузить фотографию</h3>
+				<div class="load-photo">
+					<button>Загрузить фото</button>
 				</div>
-				<div class="col-10 col-11 clearfix">
-					<div class="ideas-project ideas-project-2 clearfix">
-						<div class="ideas-block">
-							<div class="ideas-img">
-								<img src="images/new/blog.jpg" alt="">
-								
-							</div>
-							<div class="project-desc">
-								<a href="#">Детская спальня</a>
-								<p>12 Идей</p>
-							</div>
-						</div>
-						<div class="ideas-block">
-							<div class="ideas-img">
-								<img src="images/new/blog.jpg" alt="">
-								
-							</div>
-							<div class="project-desc">
-								<a href="#">Детская спальня</a>
-								<p>12 Идей</p>
-							</div>
-						</div>
-						<div class="ideas-block">
-							<div class="ideas-img">
-								<img src="images/new/blog.jpg" alt="">
-								
-							</div>
-							<div class="project-desc">
-								<a href="#">Детская спальня</a>
-								<p>12 Идей</p>
-							</div>
-						</div>
-					</div>
+				<div class="select">
+					<a href="javascript:void(0);" class="slct">Виберите специализацию</a>
+					<ul class="drop">
+						<li><a>Специализация 1</a></li>
+						<li><a>Специализация 2</a></li>
+					</ul>
 				</div>
-			</div><!-- ideas -->
-			
-			
+				<div class="select">
+					<a href="javascript:void(0);" class="slct">Виберите специализацию</a>
+					<ul class="drop">
+						<li><a>Специализация 1</a></li>
+						<li><a>Специализация 2</a></li>
+					</ul>
+				</div>
+				<div class="select">
+					<a href="javascript:void(0);" class="slct">Виберите специализацию</a>
+					<ul class="drop">
+						<li><a>Специализация 1</a></li>
+						<li><a>Специализация 2</a></li>
+					</ul>
+				</div>
+				<div class="var-input">
+					<input type="submit" value="Отменить" placeholder="">
+					<input type="submit" value="Сохранить">
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
+</div>	
+
+
 
 
 <script>
-	var mydivs=new Array('#send-sms','#ideas');
+	var mydivs=new Array('#profile','#orders','#commentary','#tips','#personal','#ideas','#projects');
 
 	function opcl(arr, e){
 	    if ($(e).css('display') == 'none'){
@@ -230,6 +218,17 @@
   });
 });
 </script>
-
+<script src="js/script.js"></script>
+<script>
+	$(document).ready(function () {
+		$('input,textarea').focus(function(){
+		  $(this).data('placeholder',$(this).attr('placeholder'))
+		  $(this).attr('placeholder','');
+		});
+		$('input,textarea').blur(function(){
+		  $(this).attr('placeholder',$(this).data('placeholder'));
+		});
+	});
+</script>		
 </body>
 </html>
