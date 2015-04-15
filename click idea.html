@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>click idea</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/modernizr-2.8.3.min.js"></script>
+	
+</head>
+<body>
+
+<div class="idea-bg">
+	<div class="add-idea">
+		<header>
+			<h3>Добавить в идеи</h3>
+		</header>
+		<form action="">
+			<fieldset>
+				<section>
+					<div class="sec-img">
+						<img src="images/new/blog.jpg" width="150" height="95" alt="">
+					</div>
+					<div class="choice-alb">
+						<div class="select">
+							<a href="javascript:void(0);" class="slct">Виберите альбом</a>
+							<ul class="drop">
+								<li><a>Альбом 1</a></li>
+								<li><a>Альбом 2</a></li>
+							</ul>
+						</div>
+						<a href="#" class="create-alb">Создать альбом</a>
+						<input type="text" placeholder="Введите название ...">
+					</div>
+					<div class="clear"></div>
+					<textarea placeholder="Введите описание ..."></textarea> <br>
+					<p class="discus-p">
+							<input type="checkbox" id="albom" placeholder="">
+							<label for="albom">Сделать альбом публичным для всех</label>
+						</p>
+					<div class="var-input">
+						<input type="submit" value="Отменить" placeholder="">
+						<input type="submit" value="Создать">
+					</div>
+					<div class="border-block"></div>
+					<p>Что вам нравится в данной идее?</p>
+					<textarea placeholder="Введите описание ..."></textarea>
+					<div class="var-input">
+						<input type="submit" value="Отменить" placeholder="">
+						<input type="submit" value="Сохранить">
+					</div>
+			</section>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+	$(document).ready(function () {
+		$('input,textarea').focus(function(){
+		  $(this).data('placeholder',$(this).attr('placeholder'))
+		  $(this).attr('placeholder','');
+		});
+		$('input,textarea').blur(function(){
+		  $(this).attr('placeholder',$(this).data('placeholder'));
+		});
+	});
+</script>
+</body>
+</html>
