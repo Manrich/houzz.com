@@ -41,7 +41,14 @@
 			<input type="password" placeholder="Минимально 6 символов">
 		</div>
 		<div class="input-block">
-			<a href="#" class="profile">Выберите профиль</a>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct">Выберите профиль</a>
+				<ul class="drop">
+					<li><a>Профиль 1</a></li>
+					<li><a>Профиль 2</a></li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
 		</div>
 		<div class="input-block">
 			<input type="submit" value="Зарегистрироваться" class="register-s">
@@ -72,5 +79,6 @@
 		});
 	});
  </script>
+ <script src="js/script.js"></script>
 </body>
 </html>
