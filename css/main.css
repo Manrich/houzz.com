@@ -1,14 +1,19 @@
 
 @font-face {
     font-family: 'MyriadProLight';
-    src: url('../fonts/MyriadProLight.eot');
-    src: url('../fonts/MyriadProLight.eot') format('embedded-opentype'),
-         url('../fonts/MyriadProLight.woff2') format('woff2'),
-         url('../fonts/MyriadProLight.woff') format('woff'),
-         url('../fonts/MyriadProLight.ttf') format('truetype'),
-         url('../fonts/MyriadProLight.svg#MyriadProLight') format('svg');
+    src: url('../fonts/MyriadProRegular.eot');
+    src: url('../fonts/MyriadProRegular.eot') format('embedded-opentype'),
+         url('../fonts/MyriadProRegular.woff2') format('woff2'),
+         url('../fonts/MyriadProRegular.woff') format('woff'),
+         url('../fonts/MyriadProRegular.ttf') format('truetype'),
+         url('../fonts/MyriadProRegular.svg#MyriadProRegular') format('svg');
 }
-
+.hbs a:link{
+	color: #343434;
+}
+.hbs a:hover,.hbs a:visited,.hbs a:active {
+	color: #000;
+}
 .clearfix:after{
 	content: "";
 	display: block;
@@ -85,7 +90,7 @@
 	margin-left: 20px;
 }
 .basket-icon{
-	width: 33px;
+	width: 39px;
     height: 27px;
     background-position: -5px -5px;
     display: block;
@@ -95,9 +100,12 @@
     text-align: center;
     color: #000 !important;
     font-size: 14px;
-    padding-right: 6px;
+    padding-right: 8px;
     padding-top: 1px;
     position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .enter-icon{
 	width: 30px;
@@ -275,34 +283,28 @@
     display: block;
 }
 .view-icon{
-	width: 20px;
-    height: 13px;
-    background-position: -5px -115px;
+  width: 32px;
+  height: 26px;
+  background-position: 4px -120px;
 }
 .heart-icon{
-	width: 18px;
-    height: 15px;
-    background-position: -5px -90px;
+	width: 32px;
+  height: 26px;
+    background-position: 0 -88px;
 }
 .comment-icon{
-	width: 16px;
-    height: 16px;
-    background-position: -5px -5px;
+	width: 32px;
+  height: 26px;
+    background-position: 1px -1px;
 }
 .blog-icon{
 	display: inline-block;
-	border: 1px solid #888;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-	padding: 7px 4px;
+	
 }
-	.icon-2{
-		padding: 6px 4px;
-	}
-	.icon-3{
-		padding: 6px 5px;
-	}
+	
 .view-block,.heart-block,.comment-block{
 	float: left;
 	width: 33.3%;
@@ -358,7 +360,7 @@
 }
 .idea{
 	height: 50px;
-	background-color: rgba(204,204,204,0.7);
+	background-color: rgba(255,255,255,0.65);
 	position:absolute;
 	bottom: 0;
 	left: 0;
@@ -438,7 +440,7 @@
 	top:0;
 	left: 50%;
 	margin-left: -32.5px;
-	background-color: rgba(204,204,204,0.7);
+	background-color: rgba(255,255,255,0.65);
 	opacity: 0;
 	visibility: hidden;
 	-webkit-transition: 0.4s all ease-in-out;
@@ -448,7 +450,7 @@
 	.large-heart-icon{
 	width: 57px;
     height: 49px;
-    background-position: -5px -31px;
+    background-position: -5px -35px;
     margin-left: 10px;
     margin-top: 7px;
 	}
@@ -460,7 +462,9 @@
 		opacity: 1;
 		visibility: visible;
 	}
-	
+.idea-block span{
+	color: #fff;
+}
 footer{
 	background-color: #f0f0f0;
 	height: 50px;
@@ -545,10 +549,10 @@ footer{
 	}
 .add-basket-block{
 	position: absolute;
-	background: rgba(204,204,204,0.2);
+	background: rgba(255,255,255,0.65);
 	width: 95%;
 	height: 50px;
-	bottom: 20%;
+	bottom: 5px;
 	-webkit-transition: 0.4s all ease-in-out;
 	-o-transition: 0.4s all ease-in-out;
 	transition: 0.4s all ease-in-out;
@@ -767,7 +771,7 @@ footer{
 	padding-top: 3px;
 }
 .register-s{
-	width: 160px !important;
+	width: 165px !important;
 	background-position: 97% !important; 
 }
 .register-p{
@@ -837,7 +841,7 @@ footer{
 		padding-top: 3px;
 	}
 		.pagination-block ul li a.next-page{
-			width: 95px;
+			width: 100px;
 			background-color: #494949;
 			color: #fff;
 			background-image: url(../images/new/next.png);
@@ -846,7 +850,7 @@ footer{
 			padding-right: 10px;
 		}
 			.pagination-block ul li a.next-page:hover{
-				opacity: 0.95;
+				background-color: #303030;
 			}
 	.pagination-block ul{
 		margin-left: 0;
@@ -862,6 +866,9 @@ footer{
 			background-color: #494949;
 			color: #fff;
 		}
+			.pagination-block ul li a.active:hover{
+				background-color: #303030;
+			}
 .pagination-block{
 position: relative;
   float: right;
@@ -911,7 +918,7 @@ position: relative;
 	border-radius: 5px;
 	border: 1px solid #d9d9d9;
 	background-color: #fff;
-	width: 170px;
+	width: 180px;
 	height: 29px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -941,7 +948,7 @@ position: relative;
 .drop {
 	margin: 0;
 	padding: 0;
-	width: 170px;
+	width: 180px;
 	border: 1px solid #cecece;
 	border-top: none;
 	display: none;
@@ -1138,7 +1145,6 @@ position: relative;
 	font-family: 'MyriadProLight';
 	font-size: 18px !important;
 	color: #343434;
-	font-weight: bold !important;
 	margin-top: 15px !important;
 	padding-left: 15px !important;
 	margin-bottom: 10px !important;
@@ -1214,11 +1220,23 @@ position: relative;
   height: 173px;
   position: relative;
   bottom: -45px;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #999;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
   left: 0;
   margin: 0 11px;
-  -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+  position: relative;
+ /* -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
-  box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.3);*/
 }
 .profile-header .profile-info {
   position: absolute;
@@ -1368,7 +1386,7 @@ position: relative;
 	float: left;
 }
 .create-idea a{
-	width: 250px;
+	width: 249px;
 	height: 230px;
 	background-color: transparent;
 	display: block;
@@ -1379,7 +1397,7 @@ position: relative;
 	font-family: 'MyriadProLight';
 	text-align: center;
 	padding-top: 145px;
-	background-image: url(../images/new/plus.jpg);
+	background-image: url(../images/new/big-plus.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55px;
 	-webkit-box-sizing: border-box;
@@ -1479,6 +1497,7 @@ position: relative;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-family: 'MyriadProLight';
+	padding-left:1px;
 }
 	.sms-number span{
 		position: relative;
@@ -2072,8 +2091,6 @@ position: relative;
 	background: url(../images/new/small-hov.png);
 	right: 2px;
 	top: 2px;
-	visibility: hidden;
-	opacity: 0;
 	-webkit-transition: 0.3s all ease-in-out;
 	-o-transition: 0.3s all ease-in-out;
 	transition: 0.3s all ease-in-out;
@@ -2090,8 +2107,6 @@ position: relative;
 	top: 50%;
 	margin-left: -60px;
 	margin-top: -59px;
-	visibility: hidden;
-	opacity: 0;
 	-webkit-transition: 0.3s all ease-in-out;
 	-o-transition: 0.3s all ease-in-out;
 	transition: 0.3s all ease-in-out;
@@ -2101,13 +2116,8 @@ position: relative;
 		opacity: 1;
 	}
 #mainUserProfilePic{
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	border: 1px solid #999;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+	position: absolute;
+	bottom: 0;
 }
 .idea-bg{
 	width: 100%;
@@ -3045,17 +3055,10 @@ a.up, a.down{
 .ui-slider .ui-slider-handle {
 	position: absolute;
 	z-index: 2;
-	width: 15px;
-	height: 15px;
-	background: #fff;
-	border:1px solid #d9d9d9;
-	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	background: url(../images/new/15.png);
 	outline: 0;
-	-webkit-border-radius: 50%;
-	-moz-webkit-border-radius: 50%;
-	-ms-webkit-border-radius: 50%;
-	-o-webkit-border-radius: 50%;
-	border-radius: 50%;
 }
 .ui-slider .ui-slider-range {
 	position: absolute;
@@ -3113,6 +3116,24 @@ a.up, a.down{
 .input-block .slct{
 	padding-top: 5px;
 }
+.whiteCard.m .photo-title, .whiteCard.m .product-title{
+	font-size: 20px !important;
+}
+.whiteCard.l .photo-title, .whiteCard.l .product-title{
+	font-size: 20px !important;
+}
+.unstyled li a:hover{
+	background-color: #f0f0f0 !important;
+	color: #343434;
+}
+.houzz-header-secondary .header-nav-rooms .header-nav-room > a{
+	font-size: 14px !important;
+}
+.houzz-header-secondary .header-nav-rooms .header-nav-room > a{
+	padding: 10px 12px 11px !important;
+}
+
+
 
 
 @media (max-width: 1279px){
@@ -3121,6 +3142,9 @@ a.up, a.down{
 	}
 	.rightSideContent .tovar-slider .item{
 		padding-left: 45px;
+	}
+	.leftSideBar, .rightSideContent{
+		font-size: 15px;
 	}
 }
 @media(min-width: 1280px){
@@ -3155,6 +3179,10 @@ a.up, a.down{
 	.one-block .mag-idea{
 		padding-left: 110px;
 	}
+	.houzz-header-secondary .header-nav-rooms .header-nav-room > a{
+		padding: 10px 18px 11px !important;
+	}
+
 }
 @media(min-width: 981px){
 	.product-slider{

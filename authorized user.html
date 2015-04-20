@@ -51,12 +51,60 @@
               	 	<input type="submit" value="" class="top-sprite search-icon" />
               	 </div>
               	 <div class="right-block-icon">
-              	 	<a class="top-sprite basket-icon">0
-						<span class="tooltip tooltip-b">Ваша корзина пуста</span>
-              	 	</a>
-              	 	<a class="top-sprite enter-icon">
-              	 		<span class="tooltip">Вы не авторизованы</span>
-              	 	</a>
+              	 	<div class="basket-drop">
+              	 		<a class="top-sprite basket-icon">0</a>
+              	 		
+              	 		<div class="basket-drop-list">
+              	 			<table>
+              	 				<tbody><tr>
+              	 					<td width="100">
+              	 						<img src="images/new/bas.jpg" alt="">
+              	 						<p>Кол-во: 1шт.</p>
+              	 					</td>
+              	 					<td width="135">
+              	 						<p class="tov-bas-info">Кровать детская Decotorion 1,2м</p>
+              	 						<p>Цена: 12 000 грн.</p>
+              	 					</td>
+              	 					<td width="40">
+              	 						<a href="#" class="del-photo"></a>
+              	 					</td>
+              	 				</tr>
+              	 				<tr>
+              	 					<td width="100">
+              	 						<img src="images/new/bas.jpg" alt="">
+              	 						<p>Кол-во: 1шт.</p>
+              	 					</td>
+              	 					<td width="135">
+              	 						<p class="tov-bas-info">Кровать детская Decotorion 1,2м</p>
+              	 						<p>Цена: 12 000 грн.</p>
+              	 					</td>
+              	 					<td width="40">
+              	 						<a href="#" class="del-photo"></a>
+              	 					</td>
+              	 				</tr>
+              	 			</tbody></table>
+              	 			<div class="total-bas">
+              	 				<p>Итого: 24 000 грн.</p>
+              	 			</div>
+              	 			<div class="var-input">
+								<a href="#"><span class="var-icon"></span>Оформить заказ</a>
+							</div>
+              	 		</div>
+              	 	</div>
+              	 	<div class="uzer-auth">
+              	 		<span class="uzer-auth-icon"></span>
+              	 		<div class="sms-number">
+							<span>12</span>
+						</div>
+              	 		<ul class="uzer-auth-list">
+              	 			<li><a href="#">Профиль</a></li>
+              	 			<li><a href="#">Сообщения +1</a></li>
+              	 			<li><a href="#">Советы</a></li>
+              	 			<li><a href="#">Заказы</a></li>
+              	 			<li><a href="#">Безопасность</a></li>
+              	 			<li class="exit-li"><a href="#">Выход</a></li>
+              	 		</ul>
+              	 	</div>
               	 </div>
 
 		    </div>
@@ -123,7 +171,7 @@
 			 	<span class="big-cam"></span>
 			 		<div class="profile-pic-container">
 						<a class="profile-pic-border" href="#">
-							<img class="profile-pic" width="173" height="173" id="mainUserProfilePic" src="images/new/unnamed.jpg">
+							<img class="profile-pic" id="mainUserProfilePic" src="images/new/unnamed.png">
 							<span class="small-cam"></span>
 						</a>
 					</div>
@@ -138,7 +186,10 @@
 			 </div>
 			 <div class="profile-link">
 				 <ul class="clearfix">
-					<li class="active" onclick="opcl(mydivs,'#profile'); return false;"><a href="#">профиль</a></li>
+					<li class="active">
+						<a href="#" onclick="opcl(mydivs,'#profile'); return false;">профиль</a>
+						<span class="edit-sp" onclick="opcl(mydivs,'#profile-edit'); return false;">Ред.</span>
+					</li>
 					<li><a href="#" onclick="opcl(mydivs,'#ideas'); return false;">идеи</a></li>
 					<li class="with-sms">
 						<a href="#">сообщения</a>
@@ -623,7 +674,7 @@
 
 
 <script>
-	var mydivs=new Array('#profile','#orders','#commentary','#tips','#personal','#ideas');
+	var mydivs=new Array('#profile','#orders','#commentary','#tips','#personal','#ideas','#profile-edit');
 
 	function opcl(arr, e){
 	    if ($(e).css('display') == 'none'){
