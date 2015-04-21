@@ -9,7 +9,7 @@
 	<meta name="verify-v1" content="9nKGs4L7kMKkW/W3LhaPp1PLE9DTXRdhjgDgtpFXxU8=">
 	<meta name="viewport" content="width=1024">
 	<meta name="y_key" content="a82e0d4a71464b25">	
-
+	<link rel="stylesheet" href="css/jquery.rollbar.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/pic(1).css">
 	<link rel="stylesheet" type="text/css" href="css/pic(2).css">
@@ -27,6 +27,14 @@
 	<link href="http://www.houzz.com/getGalleries/featured/out-rss" title="RSS 2.0" type="application/rss+xml" rel="alternate">
 	<title>Authorized user</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.rollbar.min.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function(){
+	  	$('#example1').rollbar({zIndex:80}); 
+	  	
+	  });
+	</script>
 	</head>
 <body class="en-US hbs new-std-header secondary-rooms-header">
 <div id="navContainer" class="trackMe" scopeid="headerv6">
@@ -599,6 +607,7 @@
 								<img src="images/new/profile-photo.jpg" alt="" />
 								<a href="#" class="photo-del"></a>
 							</div>
+							 
 						</div>
 						<div class="right-edit-block">
 							<div class="right-edit">
@@ -612,12 +621,14 @@
 						<h3>Ваше фото на обложке</h3>
 						<p>Выберите из предложенных фото-обложек или загрузите свою</p>
 						<div class="left-edit-block">
-							<div class="left-edit">
+							<div class="left-edit" id="example1">
 								<div class="miniature clearfix">
+									<img src="images/new/miniature.jpg" alt="" />
 									<img src="images/new/miniature.jpg" alt="" />
 								</div>
 								
 							</div>
+
 						</div>
 						<div class="right-edit-block">
 							<div class="right-edit">

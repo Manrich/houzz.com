@@ -9,7 +9,7 @@
 	<meta name="verify-v1" content="9nKGs4L7kMKkW/W3LhaPp1PLE9DTXRdhjgDgtpFXxU8=">
 	<meta name="viewport" content="width=1024">
 	<meta name="y_key" content="a82e0d4a71464b25">	
-
+	<link rel="stylesheet" href="css/jquery.rollbar.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/pic(1).css">
 	<link rel="stylesheet" type="text/css" href="css/pic(2).css">
@@ -27,6 +27,14 @@
 	<link href="http://www.houzz.com/getGalleries/featured/out-rss" title="RSS 2.0" type="application/rss+xml" rel="alternate">
 	<title>Authorized pro</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.rollbar.min.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function(){
+	  	$('#example1').rollbar({zIndex:80}); 
+	  	
+	  });
+	</script>
 	</head>
 <body class="en-US hbs new-std-header secondary-rooms-header">
 <div id="navContainer" class="trackMe" scopeid="headerv6">
@@ -120,11 +128,11 @@
 		<div class="container">
 			 <div class="profile-header view">
 			 	<div class="profile-cover">
-			 		<span class="big-cam"></span>
+			 	<span class="big-cam"></span>
 			 		<div class="profile-pic-container">
 						<a class="profile-pic-border" href="#">
+							<img class="profile-pic" id="mainUserProfilePic" src="images/new/unnamed.png">
 							<span class="small-cam"></span>
-							<img class="profile-pic" width="173" height="173" id="mainUserProfilePic" src="images/new/unnamed.jpg">
 						</a>
 					</div>
 					<img id="coverImage" class="cover-image custom-cover " src="http://st.houzz.com/simgs/d2426745046a919c_17-7851/home-design.jpg">
@@ -869,8 +877,9 @@
 						<h3>Ваше фото на обложке</h3>
 						<p>Выберите из предложенных фото-обложек или загрузите свою</p>
 						<div class="left-edit-block">
-							<div class="left-edit">
+							<div class="left-edit" id="example1">
 								<div class="miniature clearfix">
+									<img src="images/new/miniature.jpg" alt="" />
 									<img src="images/new/miniature.jpg" alt="" />
 								</div>
 								
