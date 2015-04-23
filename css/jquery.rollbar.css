@@ -57,7 +57,9 @@
 	background-color: #eee;
 	opacity: 1 !important; 
 }
-
+	.rollbar-handle:hover{
+		background-color: #dedede;
+	}
 .rollbar-path-vertical .rollbar-handle {
 	height: 130px !important;
 	width: 100%;

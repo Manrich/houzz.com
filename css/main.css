@@ -350,6 +350,7 @@
 .blog-desc h2{
 	color: #343434;
 	font-size: 32px;
+	font-family: "MyriadProLight"
 	}
 	.blog-desc .date{
 		font-size: 16px;
@@ -358,6 +359,7 @@
 	}
 		.blog-desc .date p{
 			margin-bottom: 0;
+			font-family: "MyriadProSemibold"
 		}
 	.bolg-text{
 		margin-top: 25px;
@@ -370,6 +372,7 @@
 	margin-top: 15px;
 	color: #343434 !important;
 	font-size: 16px !important;
+	font-family: "MyriadPro"
 }
 .blog-link{
 	position: absolute;
@@ -428,7 +431,7 @@
 		font-size: 16px;
 		text-align: center !important;
 	    padding-top: 4px;
-	    font-family: 'MyriadPro';
+	    font-family: 'MyriadProLight';
 	    -webkit-border-radius: 5px;
 	    -moz-border-radius: 5px;
 	    border-radius: 5px;
@@ -449,7 +452,7 @@
 	.edit-icon{
 		padding-left: 12px;
 		background-image: url(../images/new/edit.png);
-		background-position: 87% 6px;
+		background-position: 87% 5px;
 	}
 .large-heart-block{
 	position: absolute;
@@ -485,6 +488,7 @@
 	}
 .idea-block span{
 	color: #fff;
+	font-family: "MyriadProLight"
 }
 footer{
 	background-color: #f0f0f0;
@@ -587,9 +591,20 @@ footer{
 	height: 28px;
 	margin: auto;
 	margin-top: 10px;
-	background: url(../images/new/add-basket.png);
-	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #494949;
+	background-image: url(../images/new/basket-white.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	-webkit-transition: 0.2s ease-in-out background-color;
+	-o-transition: 0.2s ease-in-out background-color;
+	transition: 0.2s ease-in-out background-color;
 }
+	.add-basket:hover{
+		background-color: #303030;
+	}
 	.tovar-block:hover .add-basket-block{
 		opacity: 1;
 		visibility: visible;
@@ -716,6 +731,10 @@ footer{
 			}
 .hbs .hz-username{
 	font-size: 18px;
+	font-family: "MyriadProSemibold"
+}
+.hzbold{
+	font-family: "MyriadProSemibold"
 }
 .else{
 	-webkit-border-radius: 50%;
@@ -884,7 +903,7 @@ footer{
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		border-radius: 5px;
-		font-family: 'MyriadPro';
+		font-family: 'MyriadProLight';
 		font-size: 16px;
 	}
 		.pagination-block ul li a.active, .pagination-block ul li a:hover{
@@ -1031,6 +1050,10 @@ position: relative;
 .photoMeta .pro-description{
 	margin-top: 20px;
 }
+.photoMeta .large-text-title{
+	font-size: 32px;
+	font-family: "MyriadProLight";
+}
 .large-text{
 	font-size: 32px;
 }
@@ -1109,6 +1132,7 @@ position: relative;
  .photoInfo h2{
  	font-size: 32px;
  	color: #343434;
+ 	font-family: "MyriadProLight"
  }
   .photoInfo .date{
   	margin-top: 30px;
@@ -1173,7 +1197,7 @@ position: relative;
 .field-discus textarea:-ms-input-placeholder      {color:#bcbcbc;}
 
 .main-h3{
-	font-family: 'MyriadPro';
+	font-family: 'MyriadProSemibold';
 	font-size: 18px !important;
 	color: #343434;
 	margin-top: 15px !important;
@@ -1181,7 +1205,7 @@ position: relative;
 	margin-bottom: 10px !important;
 }
 .discus-p{
-	font-family: "MyriadProSemibold";
+	font-family: "MyriadPro";
 	font-size: 16px;
 }
 	.var-input input, .load-photo button{
@@ -1441,7 +1465,7 @@ position: relative;
 	border: 2px dashed #ccc;
 	font-size: 20px;
 	color: #ababab !important;
-	font-family: 'MyriadPro';
+	font-family: 'MyriadProLight';
 	text-align: center;
 	padding-top: 145px;
 	background-image: url(../images/new/big-plus.png);
@@ -1493,7 +1517,7 @@ position: relative;
 	display: inline-block;
 	cursor: pointer;
 	font-size: 16px;
-	font-family: "MyriadProSemibold";
+	font-family: "MyriadPro";
 	position: relative;
 	top:2px;
 }
@@ -1634,6 +1658,7 @@ position: relative;
 .per-desc{
 	font-size: 22px !important;
 	margin-bottom: 0 !important;
+	font-family: "MyriadProLight";
 }
 .more-sms{
 	display: inline-block;
@@ -1697,11 +1722,13 @@ position: relative;
 	font-size: 16px;
 	padding-top: 5px;
 	padding-right: 10px;
+
 }
 
 #commentary table .hzHouzzer{
 	font-size: 18px;
 	margin-left: 10px;
+	font-family: "MyriadProSemibold";
 }
 #tips{
 	padding-top: 10px;
@@ -1718,9 +1745,21 @@ position: relative;
 	display: inline-block;
 	width: 29px;
 	height: 28px;
-	background: url(../images/new/del-photo.png);
+	background-color: #494949;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-image: url(../images/new/del-photo.png);
+	background-repeat: no-repeat;
+	background-position: 50% 5px;
 	margin-left: 10px;
+	-webkit-transition: 0.2s background-color ease-in-out;
+	-o-transition: 0.2s background-color ease-in-out;
+	transition: 0.2s background-color ease-in-out;
 }
+	.del-photo:hover{
+		background-color: #303030;
+	}
 .var-del{
 	width: 170px;
 	margin: auto;
@@ -1746,6 +1785,7 @@ position: relative;
 }
 	#orders table p{
 		margin: 0 !important;
+		font-family: "MyriadProLight";
 		
 	}
 #orders table thead{
@@ -1764,6 +1804,7 @@ position: relative;
 	#orders table tbody td{
 		padding-bottom: 10px;
 		padding-top: 10px;
+		font-family: "MyriadProLight";
 	}
 .cell-desc{
 	width: 300px;
@@ -1915,6 +1956,7 @@ position: relative;
 	}
 		#review header .col-10 h3{
 			font-size: 18px;
+			font-family: "MyriadProSemibold";
 		}
 			#review .sidebar-header{
 				cursor: pointer;
@@ -1956,7 +1998,9 @@ position: relative;
 	margin:10px auto;
 	border-bottom: 1px solid #d9d9d9;
 }
-
+.med-header a{
+	font-family: "MyriadProSemibold";
+}
 #review .users-project .med-header{
 	padding-left: 15px;
 }
@@ -2028,7 +2072,27 @@ position: relative;
 	padding-bottom: 5px;
 	margin-top: 10px;
 }
-
+.security{
+	font-family: "MyriadPro";
+}
+	.security .main-h3{
+		font-family: 'MyriadProSemibold';
+		position:relative;
+		text-align: center;
+	}
+	.security .main-h3:before{
+		content: "";
+		position: absolute;
+		width: 15px;
+		height: 21px;
+		display: block;
+		background: url(../images/new/2.png);
+		left: 26%;
+		top: -1px;
+	}
+	.security .input-block{
+		margin-bottom: 5px;
+	}
 .my-review .userNameBox{
 	  display: inline-block;
 	  vertical-align: middle;
@@ -2037,7 +2101,9 @@ position: relative;
 	  font-size: 18px;
 	  margin-left: 10px;
 }
-
+.security input[type="text"],.security input[type="password"]{
+	width: 100% !important;
+}
 .my-review .classification{
 	    position: absolute;
   width: 80px;
@@ -2300,6 +2366,10 @@ position: relative;
 .add-idea input[type="text"]::-moz-placeholder          {color:#bcbcbc;}
 .add-idea input[type="text"]:-moz-placeholder           {color:#bcbcbc;}
 .add-idea input[type="text"]:-ms-input-placeholder      {color:#bcbcbc;}
+.security input::-webkit-input-placeholder {color:#bcbcbc;}
+.security input::-moz-placeholder          {color:#bcbcbc;}
+.security input:-moz-placeholder           {color:#bcbcbc;}
+.security input:-ms-input-placeholder      {color:#bcbcbc;}
 .add-idea textarea::-webkit-input-placeholder {color:#bcbcbc;}
 .add-idea textarea::-moz-placeholder          {color:#bcbcbc;}
 .add-idea textarea:-moz-placeholder           {color:#bcbcbc;}
@@ -2363,7 +2433,7 @@ position: relative;
 }
 .questions-text .pro-title {
   font-size: 18px;
-  font-weight: lighter;
+  font-family: "MyriadProSemibold";
 }
 .questions-text .pro-title, .questions-text .pro-rating {
   margin-left: 50px;
@@ -2440,6 +2510,7 @@ position: relative;
 }
 .questions-text h2{
 	font-size: 32px;
+	font-family: "MyriadProLight";
 }
 .review-child{
 	margin-left: 35px;
@@ -2557,6 +2628,7 @@ position: relative;
 .right-photo-block .pro-title{
 	font-size: 18px;
 	margin-left: 10px;
+	font-family: "MyriadProSemibold";
 }
 .right-photo-block .pro-rating{
 	margin-top: 10px;
@@ -2571,6 +2643,7 @@ position: relative;
 .photo-link h2{
 	font-size: 32px;
 	margin-bottom: 10px;
+	font-family: "MyriadProLight";
 }
 .right-photo-block .com-link{
 	position: relative;
@@ -2582,9 +2655,12 @@ position: relative;
 .right-photo-block .com-link span, .right-photo-block .com-link a{
 	margin-right: 22px;
 }
+.right-photo-block .hz-username,.my-review .hz-username{
+	font-family: "MyriadProSemibold";
+}
 .right-photo-block .review-child .com-link span,
 .right-photo-block .review-child .com-link a{
-	margin-right: 14px;
+	margin-right: 11px;
 }
 
 .right-photo-block .sidebar-header{
@@ -2725,12 +2801,16 @@ a.up, a.down{
 	}
 		.basket header h2{
 			font-size: 32px;
+			font-family: "MyriadProLight";
+			position: relative;
+			top: 3px;
 		}
 .questions{
 	position: absolute;
 	right: 0;
 	top: 0;
 	font-size: 24px;
+	font-family: "MyriadProLight";
 }
 	.questions span:first-child{
 		margin-right: 10px;
@@ -2793,9 +2873,11 @@ a.up, a.down{
 .bas-desc{
 	font-size: 32px;
 	text-align: left;
+	font-family: "MyriadProLight";
 }
 .table-container tbody td{
 	padding-bottom: 20px;
+	font-family: "MyriadProLight";
 }
 .table-container table:after{
 	content: "";
@@ -2839,7 +2921,7 @@ a.up, a.down{
 	}
 	.table-container .var-input a:first-child{
 		margin-right: 50px;
-		padding-left: 5px;
+		padding-left: 10px;
 	}
 .var-icon{
 	position: absolute;
@@ -2850,21 +2932,31 @@ a.up, a.down{
 	top: 11px;
 }
 .table-container .var-input a:first-child .var-icon{
-	-moz-transform: rotate(90deg);
+	/*-moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg); 
     -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    left: 1px;
+    transform: rotate(90deg);*/
+    background: url(../images/new/more-l.png);
+    width: 7px;
+    height: 12px;
+    left: 6px;
+    top: 8px;
+}
+.table-container .var-input a:last-child{
+	padding-right: 12px;
 }
 .table-container .var-input a:last-child .var-icon{
-	-moz-transform: rotate(-90deg);
+	/*-moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg); 
     -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    right: 15px;
-    top: 11px;
+    transform: rotate(-90deg);*/
+    background: url(../images/new/more-r.png)no-repeat;
+    width: 7px;
+    height: 12px;
+    right: 21px;
+    top: 9px;
 }
 .idea-link{
 	padding-top: 10px;
@@ -2876,19 +2968,34 @@ a.up, a.down{
 	display: inline-block;
 	width: 36px;
 	height: 28px;
+	background-color: #494949;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 	margin-right: 25px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	-webkit-transition: 0.2s background-color ease-in-out;
+	-o-transition: 0.2s background-color ease-in-out;
+	transition: 0.2s background-color ease-in-out;
 }
+	.idea-link a:hover{
+		background-color: #303030;
+	}
 .sidebar .sidebar-header{
 	font-family: "MyriadProSemibold";
 }
+.hbs .one-line{
+	font-size: 16px;
+}
 .bask-small{
-	background: url(../images/new/add-basket.png);
+	background-image: url(../images/new/add-basket-2.png);
 }
 .idea-small{
-	background: url(../images/new/idea-mini.png);
+	background-image: url(../images/new/idea-mini-2.png);
 }
 .save-small{
-	background: url(../images/new/imag.png);
+	background-image: url(../images/new/imag-2.png);
 }
 
 .two-block{
@@ -3089,18 +3196,22 @@ a.up, a.down{
 	  padding-left: 10px;
 	  margin: auto;
 	  margin-bottom: 5px;
+	  font-family:'MyriadProLight'!important;
 }
 	.basket-drop-list .var-input a:hover{
 		background-color: #303030;
 	}
 .basket-drop-list .var-input a .var-icon{
-	-moz-transform: rotate(-90deg);
+	/*-moz-transform: rotate(-90deg);
 	  -ms-transform: rotate(-90deg);
 	  -webkit-transform: rotate(-90deg);
 	  -o-transform: rotate(-90deg);
-	  transform: rotate(-90deg);
-	  right: 5px;
-	  top: 11px;
+	  transform: rotate(-90deg);*/
+	  background: url(../images/new/more-r.png);
+	  width: 7px;
+	  height: 12px;
+	  right: 7px;
+	  top: 8px;
 }
 .total-bas{
 	text-align: center;
@@ -3230,6 +3341,9 @@ a.up, a.down{
 	}
 	.leftSideBar, .rightSideContent{
 		font-size: 15px;
+	}
+	.security .main-h3:before{
+		left: 20%;
 	}
 }
 @media(min-width: 1280px){
