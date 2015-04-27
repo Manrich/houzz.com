@@ -2,7 +2,7 @@ $('.slct').click(function(){
 	var dropBlock = $(this).parent().find('.drop');
 
 	if( dropBlock.is(':hidden') ) {
-		dropBlock.slideDown(300);
+		dropBlock.slideDown(150);
 
 		$(this).addClass('active');
 
@@ -14,12 +14,12 @@ $('.slct').click(function(){
 
 			$(this).parent().parent().find('.slct').removeClass('active').html(selectResult);
 
-			dropBlock.slideUp(300);
+			dropBlock.slideUp(150);
 		});
 
 	} else {
 		$(this).removeClass('active');
-		dropBlock.slideUp(300);
+		dropBlock.slideUp(150);
 	}
 	return false;
 });

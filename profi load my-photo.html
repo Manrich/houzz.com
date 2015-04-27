@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- saved from url=(0021)http://www.houzz.com/ -->
+<!-- saved from url=(0032)http://www.houzz.com/photos/ls=1 -->
 <html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link href="http://st.houzz.com/static/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed">
@@ -9,18 +9,25 @@
 	<meta name="verify-v1" content="9nKGs4L7kMKkW/W3LhaPp1PLE9DTXRdhjgDgtpFXxU8=">
 	<meta name="viewport" content="width=1024">
 	<meta name="y_key" content="a82e0d4a71464b25">	
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/style(1).css">
-	<link rel="stylesheet" type="text/css" href="css/style(2).css">
+	<link rel="stylesheet" type="text/css" href="css/pic(1).css">
+	<link rel="stylesheet" type="text/css" href="css/pic(2).css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<meta name="robots" content="all">  	
+	<link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css">
+	<meta name="rating" content="General">
+	<meta name="robots" content="all">
+	<meta name="internal" href="/photos">
+	<meta name="msvalidate.01" content="6121487B49EEEBE19AD92921C67CBF16">
+		    	
 	<link rel="shortcut icon" href="http://www.houzz.com/favicon.ico" type="image/x-icon">
 	<link rel="publisher" href="https://plus.google.com/+houzz/">
 	<link rel="icon" href="http://www.houzz.com/favicon.ico" type="image/x-icon"> 
-	<link href="http://www.houzz.com/getGalleries/featured/out-rss" title="RSS 2.0" type="application/rss+xml" rel="alternate">
-	<title>create idea pro</title>
 
-</head>
+	<link href="http://www.houzz.com/getGalleries/featured/out-rss" title="RSS 2.0" type="application/rss+xml" rel="alternate">
+	<title>Load photo</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	</head>
 <body class="en-US hbs new-std-header secondary-rooms-header">
 <div id="navContainer" class="trackMe" scopeid="headerv6">
 	<div id="navHeader" class="no-print white-header  ">
@@ -105,15 +112,15 @@
 				</ul>
 				</div><!-- Конец меню категорий-->	
 				</div>
+	
 		</div>
 
-
 <div id="mainArea">
-	<div id="mainContent">
+	<div id="mainContent" class="content-profile">
 		
-		<div class="profile-header view">
-			<div class="cover-image" style="background-image:url(images/new/home-design.jpg)"></div>
-				<div class="container">
+			 <div class="profile-header view">
+			 <div class="cover-image" style="background-image:url(images/new/home-design.jpg)"></div>
+			 	<div class="container">
 			 	<div class="profile-cover">
 			 		<div class="profile-pic-container">
 						<a class="profile-pic-border" href="#">
@@ -128,7 +135,7 @@
 						</div>
 					</div>
 			 	</div>
-			 </div>
+			 	</div>
 
 			 </div>
 			 <div class="profile-link">
@@ -138,8 +145,8 @@
 						<a href="#">обзор</a>
 						<span class="edit-sp">Ред.</span>
 					</li>
-					<li ><a href="#" onclick="opcl(mydivs,'#projects'); return false;">проекты</a></li>
-					<li class="active"><a href="#">идеи</a></li>
+					<li class="active"><a href="#" onclick="opcl(mydivs,'#projects'); return false;">проекты</a></li>
+					<li><a href="#">идеи</a></li>
 					<li><a href="#">отзывы</a></li>
 					<li class="with-sms">
 						<a href="#">сообщения</a>
@@ -159,35 +166,51 @@
 				</ul>
 				</div>
 			</div>
-		<div class="container">
-		<div class="createidea">
-			<h3 class="main-h3">Создать идею</h3>
-			
-				<form action="">
-					<fieldset class="field-discus" style="padding-left:10px;">
-						<input type="text" placeholder="Введите название альбома ..." /> <br />
-						<textarea placeholder="Введите описание альбома ..."></textarea > <br />
-						<p class="discus-p">
-							<input type="checkbox" id="albom" />
-							<label for="albom">Сделать альбом публичным для всех</label>
-						</p>
-						<div class="var-input">
-							<input type="submit" value="Отменить" />
-							<input type="submit" value="Создать" />
-						</div>
-					</fieldset>
-				</form>
-		</div>
-		</div>
-			
-	
+			<div class="container">
+			<div id="load-photo">
+				<h3 class="main-h3">Загрузить свою фотографию</h3>
+				<div class="load-photo">
+					<button>Загрузить фото</button>
+				</div>
+				<div class="input-block">
+					<p>Что вам нравиться в данной идее?</p>
+					<textarea placeholder="Введите описание..."></textarea>
+				</div>
+				
+				
+				<div class="var-input">
+					<input type="submit" value="Отменить" placeholder="">
+					<input type="submit" value="Сохранить">
+				</div>
+			</div>
+			</div>
+		
 	</div>
-</div>
+</div>	
 
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+	var mydivs=new Array('#profile','#orders','#commentary','#tips','#personal','#ideas','#projects');
+
+	function opcl(arr, e){
+	    if ($(e).css('display') == 'none'){
+	        for(var i in arr){   
+	           $(arr[i]).hide();     
+	        }
+	        $(e).show();       
+	    }
+	}
+	$(document).ready(function () {
+  
+	
+	$('.profile-link ul li').click(function() {
+    $('.profile-link ul li').removeClass('active');
+    $(this).addClass('active');
+  });
+});
+</script>
 <script src="js/script.js"></script>
 <script>
 	$(document).ready(function () {
@@ -199,6 +222,6 @@
 		  $(this).attr('placeholder',$(this).data('placeholder'));
 		});
 	});
-</script>
+</script>		
 </body>
 </html>
