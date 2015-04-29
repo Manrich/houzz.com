@@ -23,3 +23,22 @@ $('.slct').click(function(){
 	}
 	return false;
 });
+
+
+
+$(function(){
+    $(window).scroll(function() {
+        var top = $(document).scrollTop();
+        if (top ==0) $(".houzz-header-secondary").slideDown(250);
+        else $(".houzz-header-secondary").slideUp(350);
+    });
+});
+
+$( document ).ready(function() {
+	 $('.houzz-header').hover(
+          function () {
+            if(($('.houzz-header-secondary').css('display')=='none')){
+            	$('.houzz-header-secondary').slideDown(250);
+            }
+          });
+});
