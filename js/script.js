@@ -41,4 +41,15 @@ $( document ).ready(function() {
             	$('.houzz-header-secondary').slideDown(250);
             }
           });
+
+	
+	$('.large-heart-block').click(function(){
+		if($(this).hasClass('tada')){
+		   $(this).removeClass('tada');
+		}
+		else{
+			$(this).addClass('tada')
+		}
+	})
+
 });
