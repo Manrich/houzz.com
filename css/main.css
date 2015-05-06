@@ -982,7 +982,7 @@ footer{
 position: relative;
   float: right;
   right: 50%;
-  margin-top: 8px;
+  margin-top: 0px;
 }
 	.pagination-block ul{
   position: relative;
@@ -1116,6 +1116,9 @@ position: relative;
 	transform:none;
 	position: relative;
 	top: -1px;
+}
+.carousel-caption{
+	text-shadow:none !important;
 }
 .proDirectory .headerContainer{
 	margin-bottom: 22px !important;
@@ -1334,7 +1337,7 @@ position: relative;
 	width: 120px !important;
 }
 .col-2 .tips-slct{
-	width: 170px;
+	width: 190px;
 	margin: 12px auto;
 }
 .profile-header {
@@ -2140,7 +2143,7 @@ position: relative;
 .edit-sp{
 	position: absolute;
 	bottom: -4px;
-	right: 0;
+	right: 3px;
 	cursor: pointer;
 	text-transform: none;
 	font-family: Arial,sans-serif;
@@ -2405,7 +2408,16 @@ position: relative;
 	background-size: cover;
 	background-position: 50% 50%;
 	position: relative;
-
+	z-index: 1;
+}
+.black-bg{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0;
+	top:0;
+	z-index: 2;
 }
 .add-idea{
 	width: 355px;
@@ -2418,6 +2430,7 @@ position: relative;
 	border-radius: 5px;
 	background-color: #fff;
 	font-family: 'MyriadPro';
+	z-index: 3;
 }
 .add-idea header{
 	background-color: #f0f0f0;
@@ -3719,13 +3732,21 @@ a.up, a.down{
 #load-photo .input-block textarea:-moz-placeholder           {color:#bcbcbc;}
 #load-photo .input-block textarea:-ms-input-placeholder      {color:#bcbcbc;}
 
-
 .new-massage{
 	background-color: #f0f0f0;
 }
 .whiteCard.l{
 	padding-bottom: 0 !important;
 }
+.without-bor{
+	border-bottom: 0 !important;
+}
+.last-child{
+	margin-bottom: 0 !important;
+}
+
+
+
 @media (max-width: 1279px){
 	.rightSideContent .tovar-slider .tovar-block{
 		width: 168px;
@@ -3770,6 +3791,12 @@ a.up, a.down{
 	}
 	.carousel-product-photo{
 		left: 51%;
+	}
+	.product-slider .blog-img img,.product-slider .blog-img{
+		height: 300px;
+	}
+	.carousel-product-photo{
+		margin-top: 25px;
 	}
 }
 @media(min-width: 1280px){
