@@ -509,6 +509,7 @@
     margin-top: 7px;
     background-image: url(../images/new/small-heart-c-h.png);
     background-size: cover;
+    background-position: 50% 50%;
 	}
 		
 
@@ -526,6 +527,7 @@
 footer{
 	background-color: #f0f0f0;
 	height: 50px;
+	border-top: 1px solid #d9d9d9;
 }
 .footer{
 	width: 980px;
@@ -548,14 +550,51 @@ footer{
 	}
 .logo-foot{
 	float: left;
-	margin-top: 7px;
+	margin-top: 8px;
 }
 .foot-social{
 	float: right;
 }
 	.foot-social p{
 		margin-bottom: 0;
+		font-size: 13px;
+		font-family: "MyriadPro";
+		color: #6e6c6d;
 	}
+	.foot-social ul li{
+		float: left;
+		margin-left: 15px;
+		list-style: none;
+	}
+	.foot-social ul{
+		margin-left: 3px;
+		margin-bottom: 5px;
+	}
+		.foot-social ul li a{
+			display: block;
+			width: 24px;
+			height: 24px;
+		}
+		.instagram{
+			background: url(../images/new/instagram.png);
+			width: 23px !important;
+		}
+			.instagram:hover{
+				background: url(../images/new/instagram-h.png);
+			}
+		.facebook{
+			background: url(../images/new/facebook.png);
+		}
+			.facebook:hover{
+				background: url(../images/new/facebook-h.png);
+			}
+		.vkontakte{
+			background: url(../images/new/vkontakte.png);
+		}
+			.vkontakte:hover{
+				background: url(../images/new/vkontakte-h.png);
+			}
+
 	.var-l{
 		position: relative;
 		top: -8px;
@@ -577,7 +616,26 @@ footer{
 		padding-left: 50px;
 		width: 215px;
 	}
-
+.foot-link{
+	float: left;
+	padding-left: 100px;
+	padding-top: 12px;
+}
+	.foot-link ul li{
+		float: left;
+		list-style: none;
+		margin-right: 40px;
+		text-transform: uppercase;
+		font-family: "MyriadPro";
+		font-size: 16px;
+	}
+		.foot-link ul li a{
+			color: #6e6c6d !important;
+		}
+			.foot-link ul li a:hover{
+				color: #000 !important;
+			}
+	
 .tovar-prev{
 	display: block;
 	width: 32px;
@@ -3634,10 +3692,10 @@ a.up, a.down{
 	box-shadow: none !important;
 }
 .pro-rating .classification{
-	width: 90px !important;
+	width: 100px !important;
 }
 .pro-rating .pro-review-string{
-	margin-left: 85px !important;
+	margin-left: 96px !important;
 	line-height: 21px !important;
 }
 .up-icon{
@@ -3645,7 +3703,7 @@ a.up, a.down{
 	color: #606060 !important;
 }
 .questions-text .pro-review-string{
-	margin-left: 45px !important;
+	margin-left: 57px !important;
 	line-height: 18px !important;
 }
 .ques-img{
@@ -3681,7 +3739,7 @@ a.up, a.down{
 	width: auto !important;
 }
 .pro-rating .classification .cover{
-	width: 90px !important
+	width: 100px !important
 }
 #load-photo{
 	padding-left: 10px;
@@ -3744,9 +3802,75 @@ a.up, a.down{
 .last-child{
 	margin-bottom: 0 !important;
 }
+.agreement{
+	padding-left: 10px;
+	font-family: "MyriadPro";
+	padding-top: 15px;
+}
+.agreement h3{
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #343434;
+	font-family: "MyriadProSemibold";
+}
+.agreement h4{
+	font-family: "MyriadProSemibold";
+	font-size: 16px;
+	color: #343434;
+}
+.agreement p{
+	font-size: 16px;
+	color: #343434;
+}
+	.agr-block{
+		margin-top: 15px;
+		line-height: 1.5;
+	}
 
-
-
+.agr-cont-block header span{
+	font-size: 18px;
+	font-family: "MyriadProSemibold";
+	color: #343434;
+	position: relative;
+	padding-left: 25px;
+}
+.agr-cont-block header{
+	padding-left: 35px;
+	margin-bottom: 5px;
+}
+.agr-cont-block{
+	margin-bottom: 18px;
+}
+.agr-tel:before{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: url(../images/new/tel.png);
+	top: 1px;
+}
+.agr-email{
+	padding-left: 37px !important;
+}
+.agr-email:before{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 29px;
+	height: 19px;
+	background: url(../images/new/convert.png);
+	top: 1px;
+}
+.agr-cont-block ul{
+	list-style: none;
+	font-size: 16px;
+	font-family: "MyriadPro";
+	margin-left: 0;
+}
+	.agr-cont-block ul li{
+		line-height: 1.6;
+	}
 @media (max-width: 1279px){
 	.rightSideContent .tovar-slider .tovar-block{
 		width: 168px;
@@ -3769,6 +3893,9 @@ a.up, a.down{
 	.right-photo-block{
 		right: 5px;
 	}
+	.product-slider .blog-img{
+		width: 105%;
+	}
 
 }
 @media (max-width: 1050px){
@@ -3780,7 +3907,7 @@ a.up, a.down{
 @media (max-width: 1000px){
 	.product-slider{
 		position: fixed;
-		top: 30px;
+		top: 14px;
 		left: 15px;
 		width: 590px;
 		height: 540px;
@@ -3840,7 +3967,7 @@ a.up, a.down{
 @media(min-width: 981px){
 	.product-slider{
 		position: fixed;
-		top: 30px;
+		top: 14px;
 	}
 }
 

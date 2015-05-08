@@ -44,9 +44,9 @@ $( document ).ready(function() {
 
 	
 	$('.large-heart-block').click(function(){
-		 $(this).animate({width: '94px', height: '82px',marginLeft: '-47px'}, 'fast')
+		 $(this).animate({width: '94px', height: '84px',marginLeft: '-45.5px'}, 'fast')
 		 $(this).animate({width: '75px', height: '65px',marginLeft:'-32.5px'}, 'fast')
-		 $(this).find('.large-heart-icon').animate({width: '78px', height: '68px'}, 'fast')
+		 $(this).find('.large-heart-icon').animate({width: '77px', height: '67px'}, 'fast')
 		 $(this).find('.large-heart-icon').animate({width: '57px', height: '49px'}, 'fast')
 		 
 		/*if($(this).hasClass('tada')){
