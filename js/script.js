@@ -42,19 +42,31 @@ $( document ).ready(function() {
             }
           });
 
-	
-	$('.large-heart-block').click(function(){
+	$('.large-heart-icon').click(function(){
+		 $(this).animate({opacity: '0'}, 250)
+		 $(this).animate({opacity:'1'}, 250)
+
+
+	/*$('.large-heart-block').click(function(){
 		 $(this).animate({width: '94px', height: '84px',marginLeft: '-45.5px'}, 'fast')
 		 $(this).animate({width: '75px', height: '65px',marginLeft:'-32.5px'}, 'fast')
 		 $(this).find('.large-heart-icon').animate({width: '77px', height: '67px'}, 'fast')
-		 $(this).find('.large-heart-icon').animate({width: '57px', height: '49px'}, 'fast')
+		 $(this).find('.large-heart-icon').animate({width: '57px', height: '49px'}, 'fast')*/
 		 
-		/*if($(this).hasClass('tada')){
-		   $(this).removeClass('tada');
-		}
-		else{
-			$(this).addClass('tada')
-		}*/
+		
 	})
+
+	$('.sidebar-header').click(function(){
+   		if($('.sidebar-body').css('display') == 'block'){
+   			$(this).addClass('active');
+	        $(this).parent('.sidebar').children('.sidebar-body').slideUp(350);
+	  	}
+	  	else if($('.sidebar-body').css('display') == 'none'){
+   			$(this).removeClass('active');
+	        $(this).parent('.sidebar').children('.sidebar-body').slideDown(350);
+	  	}
+	  	
+	})
+	
 
 });
