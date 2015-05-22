@@ -1615,7 +1615,7 @@ position: relative;
 	
 }
 .content-profile .sidebar{
-	border-bottom: 0 !important;
+	
 }
 .create-idea{
 	float: left;
@@ -2156,7 +2156,7 @@ position: relative;
 			#review .sidebar-header{
 				cursor: pointer;
 				position: absolute;
-				bottom: 0;
+				bottom: 7px;
 				right: 40px;
 			}
 .reviews-block .userNameBox{
@@ -3677,6 +3677,7 @@ a.up, a.down{
 }
 .sidebar .sidebar-item .sidebar-item-label{
 	position: relative;
+	padding-left: 15px;
 }
 	.sidebar .sidebar-item .sidebar-item-label .col-del{
 		right: 0;

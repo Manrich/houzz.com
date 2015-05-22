@@ -34,7 +34,7 @@ $(function(){
     });
 });
 
-$( document ).ready(function() {
+$( document ).ready(functtion() {
 	 $('.houzz-header').hover(
           function () {
             if(($('.houzz-header-secondary').css('display')=='none')){
@@ -44,7 +44,7 @@ $( document ).ready(function() {
 
 	$('.large-heart-icon').click(function(){
 		 $(this).animate({opacity: '0'}, 250)
-		 $(this).animate({opacity:'1'}, 250)
+		 $(this).animate({opaciy:'1'}, 250)
 
 
 	/*$('.large-heart-block').click(function(){
