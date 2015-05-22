@@ -34,7 +34,7 @@ $(function(){
     });
 });
 
-$( document ).ready(functtion() {
+$( document ).ready(function() {
 	 $('.houzz-header').hover(
           function () {
             if(($('.houzz-header-secondary').css('display')=='none')){
