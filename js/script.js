@@ -15,15 +15,30 @@ $('.slct').click(function(){
 			$(this).parent().parent().find('.slct').removeClass('active').html(selectResult);
 
 			dropBlock.slideUp(150);
+
+			
 		});
 
-	} else {
+	} 
+	
+	else {
 		$(this).removeClass('active');
 		dropBlock.slideUp(150);
+
+
 	}
+
 	return false;
 });
 
+$(document).mouseup(function (e) {
+    var container = $(".drop");
+
+    if (container.has(e.target).length === 0){
+        container.slideUp(150);
+        container.prev('.slct').removeClass('active');
+    }
+});
 
 
 $(function(){
