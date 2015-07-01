@@ -33,11 +33,11 @@ $('.slct').click(function(){
 
 $(document).mouseup(function (e) {
     var container = $(".drop");
-
     if (container.has(e.target).length === 0){
         container.slideUp(150);
         container.prev('.slct').removeClass('active');
     }
+
 });
 
 
