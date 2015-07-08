@@ -133,11 +133,11 @@
 	width: 30px;
 	display: block;
 	float: left;
-    height: 26px;
-    background-position: -5px -42px;
-    cursor: pointer;
-    margin-left: 12px;
-    position: relative;
+   height: 26px;
+   background-position: -5px -42px;
+   cursor: pointer;
+   margin-left: 12px;
+   position: relative;
 }
 	.tooltip{
 		position: absolute;
@@ -3936,7 +3936,9 @@ a.up, a.down{
 	.cover-cell img{
 		width: 100%;
 	}
-
+.form-wrapper{
+	clear: both;
+}
 
 
 
