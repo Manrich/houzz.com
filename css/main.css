@@ -2900,9 +2900,13 @@ position: relative;
 .right-photo-block .my-review{
 	height: auto;
 }
-.right-photo-block .com-link span, .right-photo-block .com-link a{
+.right-photo-block .com-link span, 
+.right-photo-block .com-link a{
 	margin-right: 22px;
 }
+	.right-photo-block .com-link a:last-child{
+		margin-right: 0;
+	}
 .right-photo-block .com-link a:hover{
 	color: #000 !important;
 }
@@ -2991,18 +2995,12 @@ a.up, a.down{
 	position: absolute;
 	display: block;
 	top:-2px;
-	right: -2px;
+	right: -3px;
 	width: 33px;
 	height: 33px;
-	background-color: rgba(255,255,255,0.6);
-	background-image: url(../images/new/12.png);
+	background-image: url(../images/new/new-12.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	-webkit-border-radius: 4px;
-	-moz-webkit-border-radius: 4px;
-	-ms-webkit-border-radius: 4px;
-	-o-webkit-border-radius: 4px;
-	border-radius: 4px;
 	visibility: hidden;
 	opacity: 0;
 	z-index: 2
@@ -3011,7 +3009,9 @@ a.up, a.down{
 	transition: 0.4s all ease-in-out;
 }
 	.reveal-hide{
-		background-image: url(../images/new/13.png);
+		background-image: url(../images/new/new-13.png);
+		width: 31px;
+		height: 31px;
 	}
 .product-slider .blog-img:hover .reveal{
 	visibility: visible;
@@ -3964,6 +3964,7 @@ a.up, a.down{
 	}
 	.right-photo-block{
 		right: 5px;
+		padding-left: 20px;
 	}
 	.product-slider .blog-img{
 		width: 105%;
