@@ -2788,11 +2788,10 @@ position: relative;
 	width: 100%;
 }
 .product-slider{
-	width: 60%;
-	left: 50%;
+	width: 62%;
 	height: 95%;
-	margin-left: -43%;
-
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .carousel-product-photo{
@@ -2848,8 +2847,7 @@ position: relative;
 	position: absolute;
 	width: 335px;
 	top:0;
-	right: 30px;
-	padding-left: 10px;
+	margin-left: 62%;
 	padding-bottom: 100px;
 }
 .right-photo-block header{
@@ -3957,8 +3955,9 @@ a.up, a.down{
 		left: 20%;
 	}
 }
+
 @media (max-width: 1150px){
-	.product-slider{
+	/*.product-slider{
 		left: 15px;
 		margin-left: auto;
 	}
@@ -3971,6 +3970,27 @@ a.up, a.down{
 	}
 	.product-slider .blog-img img,.product-slider .blog-img{
 		height: 300px;
+	}*/
+	.carousel-product-photo{
+		width: 550px;
+	}
+	.carousel-block{
+		width: 160px;
+	}
+		.carousel-block img{
+			width: 100%;
+			height: auto;
+		}
+	.carousel-button-left a, 
+	.carousel-button-right a{
+		 transform: scale(0.7);
+	    -webkit-transform: scale(0.7);
+	    -o-transform: scale(0.7);
+	    -moz-transform: scale(0.7);
+	}
+	.carousel-product-photo .carousel-button-left a, 
+	.carousel-product-photo .carousel-button-right a{
+		top:8px;
 	}
 
 }
@@ -3979,23 +3999,24 @@ a.up, a.down{
 	.product-slider{
 		position: fixed;
 		top: 14px;
-		left: 15px;
+		width: 605px;
+		/*left: 15px;
 		width: 590px;
-		height: 540px;
+		height: 540px;*/
 	}
 	.photo-wrapper{
 		width: 980px;
 		margin: auto;
 	}
-	.carousel-product-photo{
+	/*.carousel-product-photo{
 		left: 51%;
-	}
+	}*/
 	.carousel-product-photo{
 		margin-top: 25px;
 	}
-	.carousel-product-photo{
+	/*.carousel-product-photo{
 		margin-left: -15px;
-	}
+	}*/
 }
 @media(min-width: 1280px){
 	.project-img,.project-block{
